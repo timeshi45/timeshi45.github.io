@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# TypeScript函数
-函数是一组一起执行一个任务的语句。****可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。
-1234function function_name():return_">
+    <meta name="keywords" content="TypeScript类, 小狼">
+    <meta name="description" content="TypeScript类TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同的属性和方法。TypeScript 支持面向对象的所有特性，比如 类、接口等。TypeScript 类定义方式如下：
+123class ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +20,7 @@
 
     
 
-    <title>小狼</title>
+    <title>TypeScript类 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">TypeScript类</h1>
                 </div>
             </div>
         </div>
@@ -432,9 +431,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TypeScript/">
+                                <span class="chip bg-color">TypeScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -446,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -467,54 +474,41 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# <strong>TypeScript函数</strong></p>
-<p><strong>函数是一组一起执行一个任务的语句。</strong>**<br>**<strong>可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function function_name():return_type { </span><br><span class="line"> &nbsp; &nbsp;// 语句</span><br><span class="line"> &nbsp; &nbsp;return value; </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="TypeScript类"><a href="#TypeScript类" class="headerlink" title="TypeScript类"></a>TypeScript类</h2><p>TypeScript 是面向对象的 JavaScript。<br>类描述了所创建的对象共同的属性和方法。<br>TypeScript 支持面向对象的所有特性，比如 类、接口等。<br>TypeScript 类定义方式如下：</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">class_name</span> {</span><br><span class="line">	<span class="comment">//类作用域</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
+<p>定义类的关键字为 class，后面紧跟类名，类可以包含以下几个模块（类的数据成员）：</p>
+<ol>
+<li>字段 − 字段是类里面声明的变量。字段表示对象的有关数据。</li>
+<li>构造函数 − 类实例化时调用，可以为类的对象分配内存。</li>
+<li>方法 − 方法为对象要执行的操作。</li>
+</ol>
+<h3 id="创建实例化对象"><a href="#创建实例化对象" class="headerlink" title="创建实例化对象"></a>创建实例化对象</h3><p>使用new关键字来实例化类的对象</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> object_name = <span class="keyword">new</span> <span class="title function_">class_name</span>([<span class="variable language_">arguments</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">//类实例化时会调用构造函数</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Car</span>(<span class="string">""</span>engine <span class="number">1</span><span class="string">""</span>)</span><br><span class="line"> <span class="comment">//访问属性</span></span><br><span class="line"> obj.<span class="property">field_name</span></span><br><span class="line"> obj.<span class="title function_">function_name</span>()</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h3><p>Typescript支持继承类，即我们可以在创建类的时候继承一个已存在的类，这个已存在的类称为父类，继承它的类为子类<br>类继承使用关键字extends，子类除了不能继承父类的私有成员（方法和属性）和构造函数，其他的都可以继承<br>TypeScript一次只能继承一个类，不支持继承多个类，但是支持多重继承（A继承B，B继承C）</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">child_class_name</span> <span class="keyword">extends</span> <span class="title class_ inherited__">parent_class_name</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//示例</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Shape</span> { </span><br><span class="line">   <span class="title class_">Area</span>:<span class="built_in">number</span> </span><br><span class="line">   </span><br><span class="line">   <span class="title function_">constructor</span>(<span class="params">a:<span class="built_in">number</span></span>) { </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">Area</span> = a </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Shape</span> { </span><br><span class="line">   <span class="title function_">disp</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>圆的面积:  <span class="string">""</span>+<span class="variable language_">this</span>.<span class="property">Area</span>) </span><br><span class="line">   } </span><br><span class="line">}</span><br><span class="line">  </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Circle</span>(<span class="number">223</span>); </span><br><span class="line">obj.<span class="title function_">disp</span>()</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="继承类的方法重写"><a href="#继承类的方法重写" class="headerlink" title="继承类的方法重写"></a>继承类的方法重写</h3><p>类继承后，子类可以对父类的方法重新定义，这个过程称之为方法的重写<br>其中super关键字是对父类的直接引用，该关键字可以引用父类的属性和方法</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">PrinterClass</span> { </span><br><span class="line">   <span class="title function_">doPrint</span>():<span class="built_in">void</span> {</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>父类的 <span class="title function_">doPrint</span>() 方法。<span class="string">""</span>) </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">StringPrinter</span> <span class="keyword">extends</span> <span class="title class_ inherited__">PrinterClass</span> { </span><br><span class="line">   <span class="title function_">doPrint</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">super</span>.<span class="title function_">doPrint</span>() <span class="comment">// 调用父类的函数</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>子类的 <span class="title function_">doPrint</span>()方法。<span class="string">""</span>)</span><br><span class="line">   } </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="static-关键字"><a href="#static-关键字" class="headerlink" title="static 关键字"></a>static 关键字</h3><p>static关键字用于定义类的数据成员（属性和方法）为静态的，静态成员可以直接通过类名调用</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">StaticMem</span> {  </span><br><span class="line">   <span class="keyword">static</span> <span class="attr">num</span>:<span class="built_in">number</span>; </span><br><span class="line">   </span><br><span class="line">   <span class="keyword">static</span> <span class="title function_">disp</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>num 值为 <span class="string">""</span>+ <span class="title class_">StaticMem</span>.<span class="property">num</span>) </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="title class_">StaticMem</span>.<span class="property">num</span> = <span class="number">12</span>     <span class="comment">// 初始化静态变量</span></span><br><span class="line"><span class="title class_">StaticMem</span>.<span class="title function_">disp</span>()       <span class="comment">// 调用静态方法</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a>instanceof运算符</h3><p>instanceof 运算符用于判断对象是否是指定的类型，如果是返回 true，否则返回 false。</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>{ } </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Person</span>() </span><br><span class="line"><span class="keyword">var</span> isPerson = obj <span class="keyword">instanceof</span> <span class="title class_">Person</span>; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>obj 对象是 <span class="title class_">Person</span> 类实例化来的吗？ <span class="string">""</span> + isPerson);</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="访问控制修饰符"><a href="#访问控制修饰符" class="headerlink" title="访问控制修饰符"></a>访问控制修饰符</h3><p>TypeScript 中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。TypeScript 支持 3 种不同的访问权限。</p>
 <ul>
-<li><strong>return_type 是返回值的类型。</strong></li>
-<li><strong>return 关键词后跟着要返回的结果。</strong></li>
-<li><strong>一般情况下，一个函数只有一个 return 语句。</strong></li>
-<li><strong>返回值的类型需要与函数定义的返回类型(return_type)一致。</strong></li>
+<li>public（默认） : 公有，可以在任何地方被访问。</li>
+<li>protected : 受保护，可以被其自身以及其子类和父类访问。</li>
+<li>private : 私有，只能被其定义所在的类访问。</li>
 </ul>
-<h2 id="带参函数"><a href="#带参函数" class="headerlink" title="带参函数"></a><strong>带参函数</strong></h2><p><strong>在调用函数时，您可以向其传递值，这些值被称为参数。</strong>**<br><strong><strong>这些参数可以在函数中使用。</strong></strong><br>**<strong>您可以向函数发送多个参数，每个参数使用逗号 , 分隔：</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function func_name( param1 [:datatype], param2 [:datatype]) { &nbsp; </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">function add(x: number, y: number): number {</span><br><span class="line"> &nbsp; &nbsp;return x + y;</span><br><span class="line">}</span><br><span class="line">console.log(add(1,2))</span><br></pre></td></tr></tbody></table></figure>
+<p>以下实例定义了两个变量 str1 和 str2，str1 为 public，str2 为 private，实例化后可以访问 str1，如果要访问 str2 则会编译错误</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Encapsulate</span> { </span><br><span class="line">   <span class="attr">str1</span>:<span class="built_in">string</span> = <span class="string">""</span>hello<span class="string">""</span> </span><br><span class="line">   <span class="keyword">private</span> <span class="attr">str2</span>:<span class="built_in">string</span> = <span class="string">""</span>world<span class="string">""</span> </span><br><span class="line">}</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Encapsulate</span>() </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">str1</span>)     <span class="comment">// 可访问 </span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">str2</span>)   <span class="comment">// 编译错误， str2 是私有的</span></span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="可选参数"><a href="#可选参数" class="headerlink" title="可选参数"></a><strong>可选参数</strong></h3><p><strong>在 TypeScript 函数里，如果我们定义了参数，则我们必须传入这些参数，除非将这些参数设置为可选，可选参数使用问号标识 ？。</strong>**<br>**<strong>实例</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, lastName?: string) {</span><br><span class="line"> &nbsp; &nbsp;if (lastName)</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName + "" "" + lastName;</span><br><span class="line"> &nbsp; &nbsp;else</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName;</span><br><span class="line">}</span><br><span class="line"> </span><br><span class="line">let result1 = buildName(""Bob""); &nbsp;// 正确</span><br><span class="line">let result2 = buildName(""Bob"", ""Adams"", ""Sr.""); &nbsp;// 错误，参数太多了</span><br><span class="line">let result3 = buildName(""Bob"", ""Adams""); &nbsp;// 正确</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a><strong>默认参数</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function function_name(param1[:type],param2[:type] = default_value) { </span><br><span class="line">}</span><br><span class="line">//示例</span><br><span class="line">function calculate_discount(price, rate) {</span><br><span class="line"> &nbsp; &nbsp;if (rate === void 0) { rate = 0.50; }</span><br><span class="line"> &nbsp; &nbsp;var discount = price * rate;</span><br><span class="line"> &nbsp; &nbsp;console.log(""计算结果: "", discount);</span><br><span class="line">}</span><br><span class="line">calculate_discount(1000);</span><br><span class="line">calculate_discount(1000, 0.30);</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="剩余参数（可变长度参数"><a href="#剩余参数（可变长度参数" class="headerlink" title="剩余参数（可变长度参数)"></a><strong>剩余参数（可变长度参数)</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, ...restOfName: string[]) {</span><br><span class="line"> &nbsp; &nbsp;return firstName + "" "" + restOfName.join("" "");</span><br><span class="line">}</span><br><span class="line"> &nbsp;</span><br><span class="line">let employeeName = buildName(""Joseph"", ""Samuel"", ""Lucas"", ""MacKinzie"");</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a><strong>匿名函数</strong></h3><p><strong>匿名函数是一个没有函数名的函数。</strong>**<br><strong><strong>匿名函数在程序运行时动态声明，除了没有函数名外，其他的与标准函数一样。</strong></strong><br>**<strong>我们可以将匿名函数赋值给一个变量，这种表达式就成为函数表达式。</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var res = function([arguments]){...}</span><br><span class="line">//示例 不带参数的匿名函数</span><br><span class="line">var msg = function() { </span><br><span class="line"> &nbsp; &nbsp;return ""hello world""; &nbsp;</span><br><span class="line">} </span><br><span class="line">console.log(msg())</span><br><span class="line"></span><br><span class="line">//带参数的匿名函数</span><br><span class="line">var res = function(a:number,b:number) { </span><br><span class="line"> &nbsp; &nbsp;return a*b; &nbsp;</span><br><span class="line">}; </span><br><span class="line">console.log(res(12,2))</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="匿名函数自调用"><a href="#匿名函数自调用" class="headerlink" title="匿名函数自调用"></a><strong>匿名函数自调用</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function () { </span><br><span class="line"> &nbsp; &nbsp;var x = ""Hello!!""; &nbsp; </span><br><span class="line"> &nbsp; &nbsp;console.log(x) &nbsp; &nbsp; </span><br><span class="line"> })()</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a><strong>构造函数</strong></h3><p>** TypeScript 也支持使用 JavaScript 内置的构造函数 Function() 来定义函数：**</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> var res = new Function ([arg1[, arg2[, ...argN]],] functionBody)</span><br><span class="line"> //参数说明</span><br><span class="line"> //arg1, arg2, ... argN：参数列表。</span><br><span class="line"> //functionBody：一个含有包括函数定义的 JavaScript 语句的字符串。</span><br><span class="line"> </span><br><span class="line"> //示例</span><br><span class="line">var myFunction = new Function(""a"", ""b"", ""return a * b""); </span><br><span class="line">var x = myFunction(4, 3); </span><br><span class="line">console.log(x);</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a><strong>递归函数</strong></h3><p><strong>递归函数即在函数内调用函数本身</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//示例</span><br><span class="line">function factorial(number) {</span><br><span class="line">    if (number &lt;= 0) {         // 停止执行</span><br><span class="line">        return 1; </span><br><span class="line">    } else {   </span><br><span class="line">        return (number * factorial(number - 1));     // 调用自身</span><br><span class="line">    } </span><br><span class="line">}; </span><br><span class="line">console.log(factorial(6));      // 输出 720</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="Lambada函数"><a href="#Lambada函数" class="headerlink" title="Lambada函数"></a><strong>Lambada函数</strong></h3><p><strong>Lambada函数也称之为箭头函数</strong>**<br>**<strong>箭头函数表达式的语法比函数表达式更短</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//语法</span><br><span class="line">( [param1, parma2,…param n] )=&gt;statement;</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var foo = (x:number) =&gt;10+x</span><br><span class="line">console.log(foo(100))</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a><strong>函数重载</strong></h3><p><strong>重载是方法名字相同，而参数不同，返回类型可以相同也可以不同。</strong>**<br>**<strong>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">TypeScript</span><br><span class="line">function disp(s1:string):void; </span><br><span class="line">function disp(n1:number,s1:string):void; </span><br><span class="line"> </span><br><span class="line">function disp(x:any,y?:any):void { </span><br><span class="line">    console.log(x); </span><br><span class="line">    console.log(y); </span><br><span class="line">} </span><br><span class="line">disp(""abc"") </span><br><span class="line">disp(1,""xyz"");</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a><strong>元组</strong></h3><p><strong>数组中元素的数据类型都一般是相同的（any[] 类型的数组可以不同），如果存储的元素数据类型不同，则需要使用元组。</strong>**<br>**<strong>元组中允许存储不同类型的元素，元组可以作为参数传递给函数。</strong></p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//创建元组</span><br><span class="line">var tuple_name = [value1,value2,value3...]</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var mytuple = [10,""tom""]</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="元组运算"><a href="#元组运算" class="headerlink" title="元组运算"></a><strong>元组运算</strong></h4><ul>
-<li><strong>push() 向元组添加元素，添加在最后面</strong></li>
-<li><strong>pop()从元组中移除元素（最后一个),并返回移除的元素</strong></li>
-</ul>
-<h4 id="更新元组"><a href="#更新元组" class="headerlink" title="更新元组"></a><strong>更新元组</strong></h4><p><strong>元组是可变的，所以可对元组进行修改</strong>**<br>**<strong>根据指定的索引更新指定元素</strong></p>
-<h4 id="解构元组"><a href="#解构元组" class="headerlink" title="解构元组"></a><strong>解构元组</strong></h4><p><em><strong><strong>个人理解</strong></strong></em>** 类似于java的顺序取值**</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a =[10,""Runoob""] </span><br><span class="line">var [b,c] = a </span><br><span class="line">console.log( b )  </span><br><span class="line">console.log( c )</span><br></pre></td></tr></tbody></table></figure>
-<p>“</p>
+<h3 id="类和接口"><a href="#类和接口" class="headerlink" title="类和接口"></a>类和接口</h3><p>类可以实现接口，使用关键字implement，并将interface字段作为类的属性使用</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">ILoan</span> { </span><br><span class="line">   <span class="attr">interest</span>:<span class="built_in">number</span> </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AgriLoan</span> <span class="keyword">implements</span> <span class="title class_">ILoan</span> { </span><br><span class="line">   <span class="attr">interest</span>:<span class="built_in">number</span> </span><br><span class="line">   <span class="attr">rebate</span>:<span class="built_in">number</span> </span><br><span class="line">   </span><br><span class="line">   <span class="title function_">constructor</span>(<span class="params">interest:<span class="built_in">number</span>,rebate:<span class="built_in">number</span></span>) { </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">interest</span> = interest </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">rebate</span> = rebate </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">AgriLoan</span>(<span class="number">10</span>,<span class="number">1</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>利润为 : <span class="string">""</span>+obj.<span class="property">interest</span>+<span class="string">""</span>，抽成为 : <span class="string">""</span>+obj.<span class="property">rebate</span> )</span><br></pre></td></tr></tbody></table></figure>
 
                 
             </div>
@@ -541,7 +535,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/typescript-han-shu/">http://example.com/2022/04/08/typescript-han-shu/</a>
+                    <a href="http://example.com/2022/01/01/typescript-lei/">http://example.com/2022/01/01/typescript-lei/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,7 +572,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/TypeScript/">
+                                    <span class="chip bg-color">TypeScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -750,17 +752,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2022/04/08/mysql-an-zhuang/">
+                <a href="/2022/01/01/typescript-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="TypeScript类">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">TypeScript类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -770,9 +773,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -780,6 +783,19 @@
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -791,13 +807,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/linux-an-zhuang-jdk1.8/">
+                <a href="/2022/01/01/vue-xue-qian-zhun-bei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="VUE学前准备">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">VUE学前准备</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -808,7 +824,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -817,6 +833,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
+                    </a>
+                    
                 </div>
                 
             </div>

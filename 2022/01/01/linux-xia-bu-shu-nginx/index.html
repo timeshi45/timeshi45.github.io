@@ -4,16 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# Linux安装Nginx
-安装所需环境
+    <meta name="keywords" content="Linux安装Nginx, 小狼">
+    <meta name="description" content="Linux安装Nginx安装所需环境
 安装gccgcc是linux下的编译器，它可以编译 C,C++,Ada,Object C和Java等语言
 
 1gcc -v
 
 如果没安装会提示命令找不到
 1yum -y install gcc
-">
+
+
+pc">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +28,7 @@
 
     
 
-    <title>小狼</title>
+    <title>Linux安装Nginx | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Linux安装Nginx</h1>
                 </div>
             </div>
         </div>
@@ -438,9 +439,21 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/nginx/">
+                                <span class="chip bg-color">nginx</span>
+                            </a>
+                        
+                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">环境搭建</span>
+                            </a>
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -452,7 +465,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -473,8 +486,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# Linux安装Nginx</p>
-<h2 id="安装所需环境"><a href="#安装所需环境" class="headerlink" title="安装所需环境"></a>安装所需环境</h2><ol>
+                <h1 id="Linux安装Nginx"><a href="#Linux安装Nginx" class="headerlink" title="Linux安装Nginx"></a>Linux安装Nginx</h1><h2 id="安装所需环境"><a href="#安装所需环境" class="headerlink" title="安装所需环境"></a>安装所需环境</h2><ol>
 <li>安装gcc<br>gcc是linux下的编译器，它可以编译 C,C++,Ada,Object C和Java等语言</li>
 </ol>
 <figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -v</span><br></pre></td></tr></tbody></table></figure>
@@ -549,7 +561,6 @@
 
 <p>nginx.conf说明</p>
 <figure class="highlight properties"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#user  nobody;</span></span><br><span class="line"><span class="attr">worker_processes</span>  <span class="string">1; #工作进程：数目。根据硬件调整，通常等于cpu数量或者2倍cpu数量。</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">#错误日志存放路径</span></span><br><span class="line"><span class="comment">#error_log  logs/error.log;</span></span><br><span class="line"><span class="comment">#error_log  logs/error.log  notice;</span></span><br><span class="line"><span class="comment">#error_log  logs/error.log  info;</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">#pid        logs/nginx.pid; # nginx进程pid存放路径</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="attr">events</span> <span class="string">{</span></span><br><span class="line">    <span class="attr">worker_connections</span>  <span class="string">1024; # 工作进程的最大连接数量</span></span><br><span class="line"><span class="attr">}</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="attr">http</span> <span class="string">{</span></span><br><span class="line">    <span class="attr">include</span>       <span class="string">mime.types; #指定mime类型，由mime.type来定义</span></span><br><span class="line">    <span class="attr">default_type</span>  <span class="string">application/octet-stream;</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    # 日志格式设置</span></span><br><span class="line"><span class="comment">    #log_format  main  '$remote_addr - $remote_user [$time_local] ""$request"" '</span></span><br><span class="line"><span class="comment">    #                  '$status $body_bytes_sent ""$http_referer"" '</span></span><br><span class="line"><span class="comment">    #                  '""$http_user_agent"" ""$http_x_forwarded_for""';</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #access_log  logs/access.log  main; #用log_format指令设置日志格式后，需要用access_log来指定日志文件存放路径</span></span><br><span class="line"></span><br><span class="line">    <span class="attr">sendfile</span>        <span class="string">on; #指定nginx是否调用sendfile函数来输出文件，对于普通应用，必须设置on。</span></span><br><span class="line">			<span class="attr">如果用来进行下载等应用磁盘io重负载应用，可设着off，以平衡磁盘与网络io处理速度，降低系统uptime。</span></span><br><span class="line"><span class="comment">    #tcp_nopush     on; #此选项允许或禁止使用socket的TCP_CORK的选项，此选项仅在sendfile的时候使用</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #keepalive_timeout  0;  #keepalive超时时间</span></span><br><span class="line">    <span class="attr">keepalive_timeout</span>  <span class="string">65;</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #gzip  on; #开启gzip压缩服务</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #虚拟主机</span></span><br><span class="line">    <span class="attr">server</span> <span class="string">{</span></span><br><span class="line">        <span class="attr">listen</span>       <span class="string">80;  #配置监听端口号</span></span><br><span class="line">        <span class="attr">server_name</span>  <span class="string">localhost; #配置访问域名，域名可以有多个，用空格隔开</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        #charset koi8-r; #字符集设置</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        #access_log  logs/host.access.log  main;</span></span><br><span class="line"> </span><br><span class="line">        <span class="attr">location</span> <span class="string">/ {</span></span><br><span class="line">            <span class="attr">root</span>   <span class="string">html;</span></span><br><span class="line">            <span class="attr">index</span>  <span class="string">index.html index.htm;</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line"><span class="comment">        #错误跳转页</span></span><br><span class="line"><span class="comment">        #error_page  404              /404.html; </span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        # redirect server error pages to the static page /50x.html</span></span><br><span class="line"><span class="comment">        #</span></span><br><span class="line">        <span class="attr">error_page</span>   <span class="string">500 502 503 504  /50x.html;</span></span><br><span class="line">        <span class="attr">location</span> = <span class="string">/50x.html {</span></span><br><span class="line">            <span class="attr">root</span>   <span class="string">html;</span></span><br><span class="line">        <span class="attr">}</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        # proxy the PHP scripts to Apache listening on 127.0.0.1:80</span></span><br><span class="line"><span class="comment">        #</span></span><br><span class="line"><span class="comment">        #location ~ \.php$ {</span></span><br><span class="line"><span class="comment">        #    proxy_pass   http://127.0.0.1;</span></span><br><span class="line"><span class="comment">        #}</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000</span></span><br><span class="line"><span class="comment">        #</span></span><br><span class="line"><span class="comment">        #location ~ \.php$ { #请求的url过滤，正则匹配，~为区分大小写，~*为不区分大小写。</span></span><br><span class="line"><span class="comment">        #    root           html; #根目录</span></span><br><span class="line"><span class="comment">        #    fastcgi_pass   127.0.0.1:9000; #请求转向定义的服务器列表</span></span><br><span class="line"><span class="comment">        #    fastcgi_index  index.php; # 如果请求的Fastcgi_index URI是以 / 结束的, 该指令设置的文件会被附加到URI的后面并保存在变量$fastcig_script_name中</span></span><br><span class="line"><span class="comment">        #    fastcgi_param  SCRIPT_FILENAME  /scripts$fastcgi_script_name;</span></span><br><span class="line"><span class="comment">        #    include        fastcgi_params;</span></span><br><span class="line"><span class="comment">        #}</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">        # deny access to .htaccess files, if Apache's document root</span></span><br><span class="line"><span class="comment">        # concurs with nginx's one</span></span><br><span class="line"><span class="comment">        #</span></span><br><span class="line"><span class="comment">        #location ~ /\.ht {</span></span><br><span class="line"><span class="comment">        #    deny  all;</span></span><br><span class="line"><span class="comment">        #}</span></span><br><span class="line">    <span class="attr">}</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    # another virtual host using mix of IP-, name-, and port-based configuration</span></span><br><span class="line"><span class="comment">    #</span></span><br><span class="line"><span class="comment">    #server {</span></span><br><span class="line"><span class="comment">    #    listen       8000;</span></span><br><span class="line"><span class="comment">    #    listen       somename:8080;</span></span><br><span class="line"><span class="comment">    #    server_name  somename  alias  another.alias;</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #    location / {</span></span><br><span class="line"><span class="comment">    #        root   html;</span></span><br><span class="line"><span class="comment">    #        index  index.html index.htm;</span></span><br><span class="line"><span class="comment">    #    }</span></span><br><span class="line"><span class="comment">    #}</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    # HTTPS server</span></span><br><span class="line"><span class="comment">    #</span></span><br><span class="line"><span class="comment">    #server {</span></span><br><span class="line"><span class="comment">    #    listen       443 ssl;  #监听端口</span></span><br><span class="line"><span class="comment">    #    server_name  localhost; #域名</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #    ssl_certificate      cert.pem; #证书位置</span></span><br><span class="line"><span class="comment">    #    ssl_certificate_key  cert.key; #私钥位置</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #    ssl_session_cache    shared:SSL:1m;</span></span><br><span class="line"><span class="comment">    #    ssl_session_timeout  5m; </span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #    ssl_ciphers  HIGH:!aNULL:!MD5; #密码加密方式</span></span><br><span class="line"><span class="comment">    #    ssl_prefer_server_ciphers  on; # ssl_prefer_server_ciphers  on; #</span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment"> </span></span><br><span class="line"><span class="comment">    #    location / {</span></span><br><span class="line"><span class="comment">    #        root   html;</span></span><br><span class="line"><span class="comment">    #        index  index.html index.htm;</span></span><br><span class="line"><span class="comment">    #    }</span></span><br><span class="line"><span class="comment">    #}</span></span><br><span class="line"> </span><br></pre></td></tr></tbody></table></figure>
-<p>“</p>
 
                 
             </div>
@@ -576,7 +587,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/linux-xia-bu-shu-nginx/">http://example.com/2022/04/08/linux-xia-bu-shu-nginx/</a>
+                    <a href="http://example.com/2022/01/01/linux-xia-bu-shu-nginx/">http://example.com/2022/01/01/linux-xia-bu-shu-nginx/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -613,7 +624,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/nginx/">
+                                    <span class="chip bg-color">nginx</span>
+                                </a>
+                            
+                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">环境搭建</span>
+                                </a>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -789,13 +812,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/she-zhi-shu-xing/">
+                <a href="/2022/01/01/typescript-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="设置属性">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="TypeScript函数">
                         
-                        <span class="card-title">设置属性</span>
+                        <span class="card-title">TypeScript函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -806,7 +829,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -815,6 +838,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -826,13 +861,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/mysql-an-zhuang/">
+                <a href="/2022/01/01/mysql-an-zhuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL安装">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">MySQL安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -843,7 +878,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -852,6 +887,22 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
                 </div>
                 
             </div>

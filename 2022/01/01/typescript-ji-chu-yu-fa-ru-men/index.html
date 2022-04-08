@@ -4,10 +4,26 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# 概述
-VUE是一套用户构建用户界面的渐进式框架，发布与2014年2月，与其他大型框架不同的是，VUE被设计为可以自底向上逐层应用，VUE的核心库只关注视图层，不仅易于上手，还便于与地方哭或既有项目整合
-https://cn.vuejs">
+    <meta name="keywords" content="TypeScript基础语法, 小狼">
+    <meta name="description" content="一.基础数据类型
+
+
+数据类型
+关键字
+描述
+示例
+
+
+
+任意类型
+any
+声明为any的变量可以用来表示整数和分数
+
+
+
+字符串类型
+string
+一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)来定义多">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +37,7 @@ https://cn.vuejs">
 
     
 
-    <title>小狼</title>
+    <title>TypeScript基础语法 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +329,12 @@ https://cn.vuejs">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">TypeScript基础语法</h1>
                 </div>
             </div>
         </div>
@@ -432,9 +448,17 @@ https://cn.vuejs">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TypeScript/">
+                                <span class="chip bg-color">TypeScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -446,7 +470,7 @@ https://cn.vuejs">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -467,89 +491,135 @@ https://cn.vuejs">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# 概述</p>
-<p>VUE是一套用户构建用户界面的<em><strong>渐进式框架</strong></em>，发布与2014年2月，与其他大型框架不同的是，VUE被设计为可以自底向上逐层应用，VUE的核心库只关注视图层，不仅易于上手，还便于与地方哭或既有项目整合</p>
-<p><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/guide/#">https://cn.vuejs.org/v2/guide/#</a> 前端知识体系</p>
-<h2 id="前端三要素"><a href="#前端三要素" class="headerlink" title="前端三要素"></a>前端三要素</h2><ul>
-<li>HTML（结构）：超文本标记语言，决定网页的结构和内容</li>
-<li>CSS（表现）：层叠样式表，设定网页的表现样式</li>
-<li>JavaScript（行为）：是一种弱类型脚本语言，其源代码不需要经过编译，而是由浏览器解释运行，用于控制网页的行为</li>
-</ul>
-<h2 id="结构层（HTML）"><a href="#结构层（HTML）" class="headerlink" title="结构层（HTML）"></a>结构层（HTML）</h2><h2 id="表现层（CSS）"><a href="#表现层（CSS）" class="headerlink" title="表现层（CSS）"></a>表现层（CSS）</h2><p>CSS层叠样式表示一门标记语言，并不是编程语言，因此不可以自定义变量，不也已引用等，不具备任何语法支持</p>
-<p>缺点：</p>
-<ul>
-<li>语法不够强大，无法嵌套书写，导致模块化开发中需要书写很多重复的选择器</li>
-<li>没有变量和合理的样式复用机制，是的逻辑上相关的属性值必须以字面量的形式重复输出，导致难以维护</li>
-</ul>
-<p>解决：</p>
-<p>使用css预处理器的工具，提供CSS缺失的样式复用机制，减少荣誉代码，提高样式代码的可维护性，大大提高了前端样式上的开发效率</p>
-<h3 id="CSS预处理器"><a href="#CSS预处理器" class="headerlink" title="CSS预处理器"></a>CSS预处理器</h3><p>CSS预处理器定义了一种新的语言，其基本思想是，用一种专门的编程语言，为CSS增加一些编程特性，将CSS作为目标生成文件，让后开发者就只要使用这种语言进行CSS的编码工作。</p>
-<p>***本质就是用一种专门的编程语言，进行Web的页面样式设计，再通过编译器转换为正常的CSS文件，供项目使用</p>
-<ul>
-<li>SASS：基于Ruby没通过服务器端吃力，功能强大，解析效率高，需要学习Ruby语言，上手难度较大</li>
-<li>LESS：基于NodeJS，通过客户端处理，使用简单，功能比SASS简单，解析效率也低于SASS，但实际开发中足够了，建议使用</li>
-</ul>
-<h2 id="行为层（JavaScript）"><a href="#行为层（JavaScript）" class="headerlink" title="行为层（JavaScript）"></a>行为层（JavaScript）</h2><p>JavaScript是一门弱类型脚本语言，其源代码在发往客户端运行之前不需要经过编译，而是将文本格式的字符代码发送给浏览器由浏览器解释运行</p>
-<h3 id="Native原生JS开发"><a href="#Native原生JS开发" class="headerlink" title="Native原生JS开发"></a>Native原生JS开发</h3><p>原生JS开发，也就是让我们按照<em><strong>ECMAScript</strong></em>标准的开发方式，简称ES，特点是所有浏览器都支持</p>
-<p>ES3~ES9</p>
-<p>ES5全浏览器支持<br>ES6常用，当前主流版本，webpack打包成ES5支持<br>ES9（草案阶段）区别就是逐步增加新特性</p>
-<p>TypeScript微软的标准</p>
-<p>TypeScropt是一种由微软开发的自由和开源的编程语言。它是JavaScript的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程，</p>
-<p>改语言的特点就是除了具备ES的特性之外还奶入了许多不在标准范围内的新特性，所以会导致很多浏览器不能直接支持TypeScript语法，需要编译后（编译成JS）才能被浏览器正确执行</p>
-<h2 id="JavaScript框架"><a href="#JavaScript框架" class="headerlink" title="JavaScript框架"></a>JavaScript框架</h2><ul>
-<li>jQuery：简化了DOM操作，缺点是DOM操作太频繁，影响前端性能，但是兼容IE6、7、8</li>
-<li>Angular：Google收购的前端框架，由一群Java程序员开发，特点是将后台的MVC模式搬到了前端并增加了<em><strong>模块化开发</strong></em>的理念，采用TypeScript语法开发，对前端不友好，对后端程序员友好，版本迭代不合理</li>
-<li>React：Facebook出品，一款高性能JS前端框架，提出了新概念<strong>虚拟DOM</strong>用于减少真实DOM操作，在内存中模拟DOM操作，有效提升了前端渲染效率，缺点是使用复杂，需要额外学习<strong>JSX</strong>语言</li>
-<li>Vue：渐进式JavaScript框架，渐进式就是逐步实现新特性的意思，如实现模块化开发、路由、状态管理等新特性，综合了Angular（模块化）和React（虚拟DOM）的优点</li>
-<li>Axios：前端通信框架；因为VUe就是为了处理DOm，所以并不具备通信能力，此时就需额外使用一个通信框架和服务器交互；当然也可以直接选择使用jQuery提供的AJAX通信功能</li>
-</ul>
-<h2 id="UI框架"><a href="#UI框架" class="headerlink" title="UI框架"></a>UI框架</h2><ul>
-<li>Ant-Design:阿里巴巴出品，基于Reac的UI框架</li>
-<li>ElementUi、iview、ice：饿了么出品，基于VUE的UI框架</li>
-<li>Bootstrap：Twitter推测出的一个用于前端开发的开源工具包</li>
-<li>AmazeUI：一款HTML5跨屏前端框架</li>
-</ul>
-<h2 id="JavaScript构建工具"><a href="#JavaScript构建工具" class="headerlink" title="JavaScript构建工具"></a>JavaScript构建工具</h2><ul>
-<li>Babel：JS编译工具，主要用于浏览器不支持的ES新特性，比如用于编译TypeScript</li>
-<li>WebPack：模块打包器，主要作用是打包、压缩、合并及按序加载</li>
-</ul>
-<h1 id="三端统一"><a href="#三端统一" class="headerlink" title="三端统一"></a>三端统一</h1><h2 id="混合开发（Hybrid-App）"><a href="#混合开发（Hybrid-App）" class="headerlink" title="混合开发（Hybrid App）"></a>混合开发（Hybrid App）</h2><p>主要目的是实现一套代码三端统一（PC、Android：.apk、IOS：.ipa）并能够调用到设备底层硬件，打包方式主要有两种：</p>
-<ul>
-<li>云打包：Hbuild-&gt;HBulidX，DCloud出品；API Cloud</li>
-<li>本地打包：Cordova（前身是PhoneGap）</li>
-</ul>
-<h1 id="后端技术"><a href="#后端技术" class="headerlink" title="后端技术"></a>后端技术</h1><p>前端人员为了方便开发也需要掌握一定的后端技术，但Java后台人员指导后台知识体系机器庞大复杂，所以为了方便前端人员开发后台应用，就出现了NodeJS这样的技术</p>
-<p>NodeJS框架以及项目管理工具如下：</p>
-<ul>
-<li>Express：NodeJS框架</li>
-<li>Koa：Express简化版</li>
-<li>NPM：项目综合管理工具，类似于Maven</li>
-<li>YARN：NPM的替代方案，类似于Maven和Gradle的关系</li>
-</ul>
-<h2 id="主流前端框架"><a href="#主流前端框架" class="headerlink" title="主流前端框架"></a>主流前端框架</h2><p>Vue.js</p>
-<h3 id="iView"><a href="#iView" class="headerlink" title="iView"></a>iView</h3><p>iview是一个强大的基于Vue的UI库，有很多实用的基础组件比elementui的组件更丰富，主要服务于PC界面的中后台产品。使用单文件的Vue组件化开发模式，基于npm+webpack+babel开发，支持ES2015高质量、功能丰富友好的API，自由灵活地使用空间<br><strong>属于前端主流框架，选型时可考虑使用，主要特点是移动端支持比较多</strong></p>
-<h3 id="ElementUI"><a href="#ElementUI" class="headerlink" title="ElementUI"></a>ElementUI</h3><p>Element是饿了么前端开源维护的VueUI组件库，组件齐全，基本涵盖后台所需的所有组件，文档讲解详细，例子也很丰富。主要用于开发PC端的页面，是一个质量比较高的VueUI组件库</p>
-<p><strong>属于前端主流框架，选型时可考虑使用，主要特点是桌面端支持比较多</strong></p>
-<h3 id="ICE"><a href="#ICE" class="headerlink" title="ICE"></a>ICE</h3><p>飞冰是阿里巴巴团队基于React/Angular/Vue的中后台应用解决方案，在阿里巴巴内部，已经有270多个来自几乎所有BU的项目在使用，飞冰包含了一套从设计端到开发1端的完整链路，帮助用户快速搭建属于自己的中后台应用。</p>
-<p><strong>主要组件还是以React为主</strong></p>
-<h1 id="后端为主的MVC时代"><a href="#后端为主的MVC时代" class="headerlink" title="后端为主的MVC时代"></a>后端为主的MVC时代</h1><p>为了降低开发的复杂度，以后端为出发点</p>
-<p>例：SpringMVC流程</p>
+                <h1 id="一-基础数据类型"><a href="#一-基础数据类型" class="headerlink" title="一.基础数据类型"></a>一.基础数据类型</h1><table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>关键字</th>
+<th>描述</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>任意类型</td>
+<td>any</td>
+<td>声明为any的变量可以用来表示整数和分数</td>
+<td></td>
+</tr>
+<tr>
+<td>字符串类型</td>
+<td>string</td>
+<td>一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)来定义多行文本和内嵌表达式</td>
+<td>let num : number = 10;</td>
+</tr>
+<tr>
+<td>布尔类型</td>
+<td>boolean</td>
+<td>表示逻辑值true和false</td>
+<td>let flag : boolean = true</td>
+</tr>
+<tr>
+<td>数组类型</td>
+<td>无</td>
+<td>声明变量为数组</td>
+<td>let arr: number[] =[1,2];</td>
+</tr>
+<tr>
+<td>元组</td>
+<td>无</td>
+<td>元组类型用来表示一直元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同</td>
+<td>let x: [string,number];</td>
+</tr>
+<tr>
+<td>枚举</td>
+<td>enum</td>
+<td>枚举类型用于定义数值集合</td>
+<td>enum Color {Red,Blue}</td>
+</tr>
+<tr>
+<td>void</td>
+<td>void</td>
+<td>用于表示方法返回值类型，表示该方法没有返回值</td>
+<td></td>
+</tr>
+<tr>
+<td>null</td>
+<td>null</td>
+<td>表示对象值缺失</td>
+<td></td>
+</tr>
+<tr>
+<td>undefined</td>
+<td>undefined</td>
+<td>用于初始化变量为一个未定义的值</td>
+<td></td>
+</tr>
+<tr>
+<td>never</td>
+<td>never</td>
+<td>never是其他类型（包括 null 和undefined)的子类型，代表从不会出现的值</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="1-Any类型"><a href="#1-Any类型" class="headerlink" title="1. Any类型"></a>1. Any类型</h2><p>任意值是TypeScript针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。</p>
 <ol>
-<li>发起请求到前端控制器</li>
-<li>前端控制器请求HandlerMapping查找Handler，可以根据xml配置、注解进行查找对应的处理器，并返回给前端控制器</li>
-<li>前端控制器根据返回的数据查找对应的处理器并执行</li>
-<li>处理器执行完给支配器返回ModelAndView</li>
-<li>前端控制请请求视图解析器进行解析，根据逻辑视图名解析成真正的视图</li>
-<li>视图解析器向前端控制器返回view</li>
-<li>前端控制器进行视图渲染，视图渲染将模型数据（在ModelAndView对象中）填充到request域</li>
-<li>前端控制器向用户响应结果</li>
+<li>变量的值会动态改变是，比如来自用户的输入，任意类型可以让这些变量跳过编译阶段的类型检查</li>
 </ol>
-<h1 id="前端为主的MV-时代"><a href="#前端为主的MV-时代" class="headerlink" title="前端为主的MV*时代"></a>前端为主的MV*时代</h1><ul>
-<li>MVC（同步通信为主）：Model、View、Controller</li>
-<li>MVP（异步通信为主）：Model、View、Presenter</li>
-<li>MVVM（异步通信为主：Model、View、ViewModel</li>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">any</span> = <span class="number">1</span>;</span><br><span class="line">x = <span class="string">'Is time'</span>;</span><br><span class="line">x = <span class="literal">false</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="2-Null和Undefined"><a href="#2-Null和Undefined" class="headerlink" title="2. Null和Undefined"></a>2. Null和Undefined</h2><h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>在 JavaScript 中 null 表示 “”什么都没有””。<br>null是一个只有一个值的特殊类型。表示一个空对象引用。<br>用 type of 检测 null 返回是 object。</p>
+<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>在 JavaScript 中, undefined 是一个没有设置值的变量。</p>
+<p>type of一个没有值的变量会返回 undefined。</p>
+<p>Null 和 Undefined 是其他任何类型（包括 void）的子类型，可以赋值给其它类型，如数字类型，此时，赋值后的类型会变成 null 或 undefined。而在TypeScript中启用严格的空校验（–strictNullChecks）特性，就可以使得null 和 undefined 只能被赋值给 void 或本身对应的类型</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//启用严格的空校验(--strictNullChecks)</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行错误</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行错误</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 启用 --strictNullChecks</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span> | <span class="literal">null</span> | <span class="literal">undefined</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行正确</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-never类型"><a href="#3-never类型" class="headerlink" title="3. never类型"></a>3. never类型</h2><p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环）</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">never</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">y</span>: <span class="built_in">number</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行错误，数字类型不能转为 never 类型</span></span><br><span class="line">x = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 never类型</span></span><br><span class="line">x = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 数字类型</span></span><br><span class="line">y = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是抛出异常的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">error</span>(<span class="params">message: <span class="built_in">string</span></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(message);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是无法被执行到的终止点的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) {}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h1 id="二、TypeScript-变量声明"><a href="#二、TypeScript-变量声明" class="headerlink" title="二、TypeScript 变量声明"></a>二、TypeScript 变量声明</h1><ol>
+<li>声明变量的类型及初始值：</li>
+</ol>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] : [类型] = 值;</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span> = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="2">
+<li>声明变量的类型，但没有初始值，变量值会设置为 undefined：</li>
+</ol>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名]: [类型];</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="3">
+<li>声明变量并初始值，但不设置类型，该变量可以是任意类型：</li>
+</ol>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] = 值;</span><br><span class="line"><span class="keyword">var</span> uname = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
+
+<ol start="4">
+<li>声明变量没有设置类型和初始值，类型可以是任意类型，默认初始值为 undefined：</li>
+</ol>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名];</span><br><span class="line"><span class="keyword">var</span> uname;</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>注意</strong>:变量不要使用 name 否则会与 DOM 中的全局 window 对象下的 name 属性出现了重名。</p>
+<h3 id="类型断言"><a href="#类型断言" class="headerlink" title="类型断言"></a>类型断言</h3><p>类型断言可以用来手动指定一个值的类型，即允许变量从一种类型更改为另一种类型。<br>语法格式：</p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;类型&gt; 值</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或</p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值 as 类型</span><br></pre></td></tr></tbody></table></figure>
+
+<p>示例：</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'1'</span></span><br><span class="line"><span class="keyword">var</span> <span class="attr">str2</span>:<span class="built_in">number</span> = &lt;<span class="built_in">number</span>&gt;&lt;<span class="built_in">any</span>&gt; str <span class="comment">//str、str2是string类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str2)</span><br></pre></td></tr></tbody></table></figure>
+
+<p><em><strong>个人理解</strong></em></p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">类型断言不是类型强制转换，而是类型选择。只是在特定地点强制认为该变量的类型为断言类型。</span><br><span class="line">例如：</span><br><span class="line">val变量为联合类型number和string,即val既是number类型，也是string类型，当代码中需要返回val的长度时，val.length就会报错，因为number类型没有length方法。</span><br><span class="line">访问联合类型值的属性时，这个属性必须是所有可能类型的共有属性</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><p>变量作用域指定了变量定义的位置。</p>
+<p>程序中变量的可用性由变量作用域决定。</p>
+<p>TypeScript 有以下几种作用域：</p>
+<ul>
+<li><strong>全局作用域</strong> ：  全局变量定义在程序结构的外部，它可以在你代码的任何位置使用。</li>
+<li><strong>类作用域</strong>  ：    这个变量也可以称为 字段。类变量声明在一个类里头，但在类的方法外面。 该变量可以通过类的对象来访问。类变量也可以是静态的，静态的变量可以通过类名直接访问。</li>
+<li><strong>局部作用域</strong> ：   局部变量，局部变量只能在声明它的一个代码块（如：方法）中使用。</li>
 </ul>
-<p>为了降低前端开发复杂度，涌现了大量的前端框架，比如：AngularJS、React、Vue.JS、EmberJS等，这些框架总的原则是先按类型分层，比如Templates、Controllers、Models，然后在在层内做分切<br>“</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> global_num = <span class="number">12</span>          <span class="comment">// 全局变量</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Numbers</span> { </span><br><span class="line">   num_val = <span class="number">13</span>;             <span class="comment">// 实例变量</span></span><br><span class="line">   <span class="keyword">static</span> sval = <span class="number">10</span>;         <span class="comment">// 静态变量</span></span><br><span class="line">   </span><br><span class="line">   <span class="title function_">storeNum</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="keyword">var</span> local_num = <span class="number">14</span>;    <span class="comment">// 局部变量</span></span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>全局变量为: <span class="string">""</span>+global_num)  </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Numbers</span>.<span class="property">sval</span>)   <span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Numbers</span>(); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>实例变量: <span class="string">""</span>+obj.<span class="property">num_val</span>)</span><br></pre></td></tr></tbody></table></figure>
 
                 
             </div>
@@ -576,7 +646,7 @@ https://cn.vuejs">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/vue-xue-qian-zhun-bei/">http://example.com/2022/04/08/vue-xue-qian-zhun-bei/</a>
+                    <a href="http://example.com/2022/01/01/typescript-ji-chu-yu-fa-ru-men/">http://example.com/2022/01/01/typescript-ji-chu-yu-fa-ru-men/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -613,7 +683,15 @@ https://cn.vuejs">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/TypeScript/">
+                                    <span class="chip bg-color">TypeScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -789,13 +867,13 @@ https://cn.vuejs">
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/typescript-jie-kou/">
+                <a href="/2022/01/01/typescript-jie-kou/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="TypeScript接口">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">TypeScript接口</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -806,7 +884,7 @@ https://cn.vuejs">
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -817,22 +895,34 @@ https://cn.vuejs">
                     </div>
                 </div>
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/vue-xue-qian-zhun-bei/">
+                <a href="/2022/01/01/typescript-han-shu/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="TypeScript函数">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">TypeScript函数</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -843,7 +933,7 @@ https://cn.vuejs">
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -853,7 +943,18 @@ https://cn.vuejs">
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

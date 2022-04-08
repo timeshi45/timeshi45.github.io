@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# MySQL安装
-MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M
+    <meta name="keywords" content="MySQL安装, 小狼">
+    <meta name="description" content="MySQL安装MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M
 
 查看CentOS是否自带的MySQL，如果已经安装需要卸载。如果没有找到，则表示没有安装。
-1rpm -qa | grep m">
+1rpm -qa | grep mysql">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +22,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
 
     
 
-    <title>小狼</title>
+    <title>MySQL安装 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -315,12 +314,12 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">MySQL安装</h1>
                 </div>
             </div>
         </div>
@@ -434,9 +433,21 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">环境搭建</span>
+                            </a>
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/mysql/">
+                                <span class="chip bg-color">mysql</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -448,7 +459,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -469,8 +480,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# MySQL安装</p>
-<h2 id="MySQL在线下载安装"><a href="#MySQL在线下载安装" class="headerlink" title="MySQL在线下载安装"></a>MySQL在线下载安装</h2><p>注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M</p>
+                <h1 id="MySQL安装"><a href="#MySQL安装" class="headerlink" title="MySQL安装"></a>MySQL安装</h1><h2 id="MySQL在线下载安装"><a href="#MySQL在线下载安装" class="headerlink" title="MySQL在线下载安装"></a>MySQL在线下载安装</h2><p>注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M</p>
 <ol>
 <li><p>查看CentOS是否自带的MySQL，如果已经安装需要卸载。如果没有找到，则表示没有安装。</p>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep mysql</span><br></pre></td></tr></tbody></table></figure></li>
@@ -536,7 +546,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
 <li><p>开放Linux的对外访问的端口3306</p>
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span> Linux命令</span><br><span class="line"><span class="params">#</span>开放3306端口</span><br><span class="line">/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT</span><br><span class="line"></span><br><span class="line"><span class="params">#</span>开放的端口永久保存到防火墙</span><br><span class="line">firewall-cmd --zone=public --add-port=3306/tcp --permanent</span><br><span class="line"></span><br><span class="line"><span class="params">#</span>重启防火墙</span><br><span class="line">systemctl restart firewalld</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
-<h2 id="客户端Windows连接MySQL"><a href="#客户端Windows连接MySQL" class="headerlink" title="客户端Windows连接MySQL"></a>客户端Windows连接MySQL</h2><p>在本地Windows系统使用Navicat Premium软件连接虚拟机中的Linux系统安装的MySQL<br>“</p>
+<h2 id="客户端Windows连接MySQL"><a href="#客户端Windows连接MySQL" class="headerlink" title="客户端Windows连接MySQL"></a>客户端Windows连接MySQL</h2><p>在本地Windows系统使用Navicat Premium软件连接虚拟机中的Linux系统安装的MySQL</p>
 
                 
             </div>
@@ -563,7 +573,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/mysql-an-zhuang/">http://example.com/2022/04/08/mysql-an-zhuang/</a>
+                    <a href="http://example.com/2022/01/01/mysql-an-zhuang/">http://example.com/2022/01/01/mysql-an-zhuang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -600,7 +610,19 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">环境搭建</span>
+                                </a>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/mysql/">
+                                    <span class="chip bg-color">mysql</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -776,13 +798,13 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/linux-xia-bu-shu-nginx/">
+                <a href="/2022/01/01/linux-xia-bu-shu-nginx/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Linux安装Nginx">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Linux安装Nginx</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -793,7 +815,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -802,6 +824,22 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -813,13 +851,13 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/typescript-han-shu/">
+                <a href="/2022/01/01/linux-an-zhuang-redis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux安装redis">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">linux安装redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -830,7 +868,7 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -839,6 +877,22 @@ MySQL在线下载安装注：需要连接互联网，在线mysql的安装包，5
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/redis/">
+                        <span class="chip bg-color">redis</span>
+                    </a>
+                    
                 </div>
                 
             </div>

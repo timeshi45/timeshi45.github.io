@@ -4,10 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“## TypeScript类
-TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同的属性和方法。TypeScript 支持面向对象的所有特性，比如 类、接口等。TypeScript 类定义方式如下：
-123c">
+    <meta name="keywords" content="Linux安装JDK1.8, 小狼">
+    <meta name="description" content="Linux安装JDK1.81、检查系统中的jdk版本1java -version
+
+2、检测jdk安装包1rpm -qa | grep java
+
+3、卸载openjdk1rpm -e --nodeps xxxxxxx
+
+或者
+1yum r">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +26,7 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
 
     
 
-    <title>小狼</title>
+    <title>Linux安装JDK1.8 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +318,12 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Linux安装JDK1.8</h1>
                 </div>
             </div>
         </div>
@@ -432,9 +437,21 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">环境搭建</span>
+                            </a>
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -446,7 +463,7 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -467,43 +484,46 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“## TypeScript类</p>
-<p>TypeScript 是面向对象的 JavaScript。<br>类描述了所创建的对象共同的属性和方法。<br>TypeScript 支持面向对象的所有特性，比如 类、接口等。<br>TypeScript 类定义方式如下：</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">class_name</span> {</span><br><span class="line">	<span class="comment">//类作用域</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+                <h1 id="Linux安装JDK1-8"><a href="#Linux安装JDK1-8" class="headerlink" title="Linux安装JDK1.8"></a>Linux安装JDK1.8</h1><h2 id="1、检查系统中的jdk版本"><a href="#1、检查系统中的jdk版本" class="headerlink" title="1、检查系统中的jdk版本"></a>1、检查系统中的jdk版本</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
 
-<p>定义类的关键字为 class，后面紧跟类名，类可以包含以下几个模块（类的数据成员）：</p>
+<h2 id="2、检测jdk安装包"><a href="#2、检测jdk安装包" class="headerlink" title="2、检测jdk安装包"></a>2、检测jdk安装包</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3、卸载openjdk"><a href="#3、卸载openjdk" class="headerlink" title="3、卸载openjdk"></a>3、卸载openjdk</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxxxxxx</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum remove *openjdk*</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="4、安装新的jdk"><a href="#4、安装新的jdk" class="headerlink" title="4、安装新的jdk"></a>4、安装新的jdk</h2><p>首先到jdk官网上下载你想要的jdk版本。官网由于证书问题wget 不能直接下载，需要加忽略证书和请求头。</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate --no-cookies --header ""Cookie: oraclelicense=accept-securebackup-cookie"" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
+
+<p>添加执行权限：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x jdk-8u131-linux-x64.rpm </span><br></pre></td></tr></tbody></table></figure>
+
+<p>执行rpm进行安装</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
+
+<p>查看JDK是否安装成功</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
+
+<p>查看JDK的安装路径，（一般默认的路径：/usr/java/jdk1.8.0_131）<br>移动到/usr/local下</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/java /usr/loacl</span><br></pre></td></tr></tbody></table></figure>
+
 <ol>
-<li>字段 − 字段是类里面声明的变量。字段表示对象的有关数据。</li>
-<li>构造函数 − 类实例化时调用，可以为类的对象分配内存。</li>
-<li>方法 − 方法为对象要执行的操作。</li>
+<li><p>配置jdk环境变量，打开/etc/profile配置文件，将下面配置拷贝进去。export命令用于将shell变量输出为环境变量。</p>
+<p>注：在linux下以冒号分隔不同的路径，而windows下是分号。</p>
+<p>注：引用变量在linux下是$变量名, 在windows下是%变量名%</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
 </ol>
-<h3 id="创建实例化对象"><a href="#创建实例化对象" class="headerlink" title="创建实例化对象"></a>创建实例化对象</h3><p>使用new关键字来实例化类的对象</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> object_name = <span class="keyword">new</span> <span class="title function_">class_name</span>([<span class="variable language_">arguments</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">//类实例化时会调用构造函数</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Car</span>(<span class="string">""</span>engine <span class="number">1</span><span class="string">""</span>)</span><br><span class="line"> <span class="comment">//访问属性</span></span><br><span class="line"> obj.<span class="property">field_name</span></span><br><span class="line"> obj.<span class="title function_">function_name</span>()</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="类的继承"><a href="#类的继承" class="headerlink" title="类的继承"></a>类的继承</h3><p>Typescript支持继承类，即我们可以在创建类的时候继承一个已存在的类，这个已存在的类称为父类，继承它的类为子类<br>类继承使用关键字extends，子类除了不能继承父类的私有成员（方法和属性）和构造函数，其他的都可以继承<br>TypeScript一次只能继承一个类，不支持继承多个类，但是支持多重继承（A继承B，B继承C）</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">child_class_name</span> <span class="keyword">extends</span> <span class="title class_ inherited__">parent_class_name</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//示例</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Shape</span> { </span><br><span class="line">   <span class="title class_">Area</span>:<span class="built_in">number</span> </span><br><span class="line">   </span><br><span class="line">   <span class="title function_">constructor</span>(<span class="params">a:<span class="built_in">number</span></span>) { </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">Area</span> = a </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Circle</span> <span class="keyword">extends</span> <span class="title class_ inherited__">Shape</span> { </span><br><span class="line">   <span class="title function_">disp</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>圆的面积:  <span class="string">""</span>+<span class="variable language_">this</span>.<span class="property">Area</span>) </span><br><span class="line">   } </span><br><span class="line">}</span><br><span class="line">  </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Circle</span>(<span class="number">223</span>); </span><br><span class="line">obj.<span class="title function_">disp</span>()</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="继承类的方法重写"><a href="#继承类的方法重写" class="headerlink" title="继承类的方法重写"></a>继承类的方法重写</h3><p>类继承后，子类可以对父类的方法重新定义，这个过程称之为方法的重写<br>其中super关键字是对父类的直接引用，该关键字可以引用父类的属性和方法</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">PrinterClass</span> { </span><br><span class="line">   <span class="title function_">doPrint</span>():<span class="built_in">void</span> {</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>父类的 <span class="title function_">doPrint</span>() 方法。<span class="string">""</span>) </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">StringPrinter</span> <span class="keyword">extends</span> <span class="title class_ inherited__">PrinterClass</span> { </span><br><span class="line">   <span class="title function_">doPrint</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">super</span>.<span class="title function_">doPrint</span>() <span class="comment">// 调用父类的函数</span></span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>子类的 <span class="title function_">doPrint</span>()方法。<span class="string">""</span>)</span><br><span class="line">   } </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="static-关键字"><a href="#static-关键字" class="headerlink" title="static 关键字"></a>static 关键字</h3><p>static关键字用于定义类的数据成员（属性和方法）为静态的，静态成员可以直接通过类名调用</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">StaticMem</span> {  </span><br><span class="line">   <span class="keyword">static</span> <span class="attr">num</span>:<span class="built_in">number</span>; </span><br><span class="line">   </span><br><span class="line">   <span class="keyword">static</span> <span class="title function_">disp</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>num 值为 <span class="string">""</span>+ <span class="title class_">StaticMem</span>.<span class="property">num</span>) </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="title class_">StaticMem</span>.<span class="property">num</span> = <span class="number">12</span>     <span class="comment">// 初始化静态变量</span></span><br><span class="line"><span class="title class_">StaticMem</span>.<span class="title function_">disp</span>()       <span class="comment">// 调用静态方法</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="instanceof运算符"><a href="#instanceof运算符" class="headerlink" title="instanceof运算符"></a>instanceof运算符</h3><p>instanceof 运算符用于判断对象是否是指定的类型，如果是返回 true，否则返回 false。</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span>{ } </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Person</span>() </span><br><span class="line"><span class="keyword">var</span> isPerson = obj <span class="keyword">instanceof</span> <span class="title class_">Person</span>; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>obj 对象是 <span class="title class_">Person</span> 类实例化来的吗？ <span class="string">""</span> + isPerson);</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="访问控制修饰符"><a href="#访问控制修饰符" class="headerlink" title="访问控制修饰符"></a>访问控制修饰符</h3><p>TypeScript 中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。TypeScript 支持 3 种不同的访问权限。</p>
 <ul>
-<li>public（默认） : 公有，可以在任何地方被访问。</li>
-<li>protected : 受保护，可以被其自身以及其子类和父类访问。</li>
-<li>private : 私有，只能被其定义所在的类访问。</li>
+<li><p>/etc/profile</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>set java environment</span><br><span class="line">JAVA<span class="built_in">_</span>HOME=/usr/local/jdk1.8.0<span class="built_in">_</span>211</span><br><span class="line">CLASSPATH=.:<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/lib</span><br><span class="line">PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME CLASSPATH PATH</span><br></pre></td></tr></tbody></table></figure></li>
 </ul>
-<p>以下实例定义了两个变量 str1 和 str2，str1 为 public，str2 为 private，实例化后可以访问 str1，如果要访问 str2 则会编译错误</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Encapsulate</span> { </span><br><span class="line">   <span class="attr">str1</span>:<span class="built_in">string</span> = <span class="string">""</span>hello<span class="string">""</span> </span><br><span class="line">   <span class="keyword">private</span> <span class="attr">str2</span>:<span class="built_in">string</span> = <span class="string">""</span>world<span class="string">""</span> </span><br><span class="line">}</span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Encapsulate</span>() </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">str1</span>)     <span class="comment">// 可访问 </span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">str2</span>)   <span class="comment">// 编译错误， str2 是私有的</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="类和接口"><a href="#类和接口" class="headerlink" title="类和接口"></a>类和接口</h3><p>类可以实现接口，使用关键字implement，并将interface字段作为类的属性使用</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">ILoan</span> { </span><br><span class="line">   <span class="attr">interest</span>:<span class="built_in">number</span> </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">class</span> <span class="title class_">AgriLoan</span> <span class="keyword">implements</span> <span class="title class_">ILoan</span> { </span><br><span class="line">   <span class="attr">interest</span>:<span class="built_in">number</span> </span><br><span class="line">   <span class="attr">rebate</span>:<span class="built_in">number</span> </span><br><span class="line">   </span><br><span class="line">   <span class="title function_">constructor</span>(<span class="params">interest:<span class="built_in">number</span>,rebate:<span class="built_in">number</span></span>) { </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">interest</span> = interest </span><br><span class="line">      <span class="variable language_">this</span>.<span class="property">rebate</span> = rebate </span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">AgriLoan</span>(<span class="number">10</span>,<span class="number">1</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>利润为 : <span class="string">""</span>+obj.<span class="property">interest</span>+<span class="string">""</span>，抽成为 : <span class="string">""</span>+obj.<span class="property">rebate</span> )</span><br></pre></td></tr></tbody></table></figure>
-<p>“</p>
+<ol start="3">
+<li><p>重新加载/etc/profile配置文件，并测试</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
+<li><p>判断JDK是否安装成功</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></tbody></table></figure></li>
+</ol>
 
                 
             </div>
@@ -530,7 +550,7 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/typescript-lei/">http://example.com/2022/04/08/typescript-lei/</a>
+                    <a href="http://example.com/2022/01/01/linux-an-zhuang-jdk1.8/">http://example.com/2022/01/01/linux-an-zhuang-jdk1.8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -567,7 +587,19 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">环境搭建</span>
+                                </a>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -743,13 +775,13 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/linux-an-zhuang-jdk1.8/">
+                <a href="/2022/01/01/linux-an-zhuang-redis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="linux安装redis">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">linux安装redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -760,7 +792,7 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -771,22 +803,38 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                     </div>
                 </div>
                 
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/redis/">
+                        <span class="chip bg-color">redis</span>
+                    </a>
+                    
+                </div>
+                
             </div>
         </div>
         
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
+                Current&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/typescript-ji-chu-yu-fa-ru-men/">
+                <a href="/2022/01/01/linux-an-zhuang-jdk1.8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Linux安装JDK1.8">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Linux安装JDK1.8</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -797,7 +845,7 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -806,6 +854,23 @@ TypeScript 是面向对象的 JavaScript。类描述了所创建的对象共同�
                             
                         </span>
                     </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
                 </div>
                 
             </div>

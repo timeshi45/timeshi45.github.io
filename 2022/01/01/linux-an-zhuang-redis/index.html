@@ -4,27 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# 一.基础数据类型
-
-
-
-数据类型
-关键字
-描述
-示例
-
-
-
-任意类型
-any
-声明为any的变量可以用来表示整数和分数
-
-
-
-字符串类型
-string
-一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)">
+    <meta name="keywords" content="linux安装redis, 小狼">
+    <meta name="description" content="linux安装redis一、进入redis官网寻找要下载的版本：https://redis.io/将下载地址链接复制下来： http://download.redis.io/releases/redis-6.0.5.tar.gz
+二、在线下">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -38,7 +20,7 @@ string
 
     
 
-    <title>小狼</title>
+    <title>linux安装redis | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -330,12 +312,12 @@ string
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">linux安装redis</h1>
                 </div>
             </div>
         </div>
@@ -449,9 +431,21 @@ string
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                <span class="chip bg-color">环境搭建</span>
+                            </a>
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                            <a href="/tags/redis/">
+                                <span class="chip bg-color">redis</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -463,7 +457,7 @@ string
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -484,136 +478,82 @@ string
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# 一.基础数据类型</p>
-<table>
-<thead>
-<tr>
-<th>数据类型</th>
-<th>关键字</th>
-<th>描述</th>
-<th>示例</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>任意类型</td>
-<td>any</td>
-<td>声明为any的变量可以用来表示整数和分数</td>
-<td></td>
-</tr>
-<tr>
-<td>字符串类型</td>
-<td>string</td>
-<td>一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)来定义多行文本和内嵌表达式</td>
-<td>let num : number = 10;</td>
-</tr>
-<tr>
-<td>布尔类型</td>
-<td>boolean</td>
-<td>表示逻辑值true和false</td>
-<td>let flag : boolean = true</td>
-</tr>
-<tr>
-<td>数组类型</td>
-<td>无</td>
-<td>声明变量为数组</td>
-<td>let arr: number[] =[1,2];</td>
-</tr>
-<tr>
-<td>元组</td>
-<td>无</td>
-<td>元组类型用来表示一直元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同</td>
-<td>let x: [string,number];</td>
-</tr>
-<tr>
-<td>枚举</td>
-<td>enum</td>
-<td>枚举类型用于定义数值集合</td>
-<td>enum Color {Red,Blue}</td>
-</tr>
-<tr>
-<td>void</td>
-<td>void</td>
-<td>用于表示方法返回值类型，表示该方法没有返回值</td>
-<td></td>
-</tr>
-<tr>
-<td>null</td>
-<td>null</td>
-<td>表示对象值缺失</td>
-<td></td>
-</tr>
-<tr>
-<td>undefined</td>
-<td>undefined</td>
-<td>用于初始化变量为一个未定义的值</td>
-<td></td>
-</tr>
-<tr>
-<td>never</td>
-<td>never</td>
-<td>never是其他类型（包括 null 和undefined)的子类型，代表从不会出现的值</td>
-<td></td>
-</tr>
-</tbody></table>
-<h2 id="1-Any类型"><a href="#1-Any类型" class="headerlink" title="1. Any类型"></a>1. Any类型</h2><p>任意值是TypeScript针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。</p>
-<ol>
-<li>变量的值会动态改变是，比如来自用户的输入，任意类型可以让这些变量跳过编译阶段的类型检查</li>
+                <h1 id="linux安装redis"><a href="#linux安装redis" class="headerlink" title="linux安装redis"></a>linux安装redis</h1><h2 id="一、进入redis官网寻找要下载的版本：https-redis-io"><a href="#一、进入redis官网寻找要下载的版本：https-redis-io" class="headerlink" title="一、进入redis官网寻找要下载的版本：https://redis.io/"></a>一、进入redis官网寻找要下载的版本：<a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></h2><p>将下载地址链接复制下来： <a target="_blank" rel="noopener" href="http://download.redis.io/releases/redis-6.0.5.tar.gz">http://download.redis.io/releases/redis-6.0.5.tar.gz</a></p>
+<h2 id="二、在线下载redis"><a href="#二、在线下载redis" class="headerlink" title="二、在线下载redis"></a>二、在线下载redis</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">wget  http://download.redis.io/releases/redis-6.0.5.tar.gz</span><br></pre></td></tr></tbody></table></figure>
+
+<p>下载完成之后解压安装包并执行安装测试</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar xzf redis-6.0.5.tar.gz</span><br><span class="line">cd redis-6.0.5</span><br><span class="line">make test</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果出现</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/sh: cc: command not found </span><br></pre></td></tr></tbody></table></figure>
+
+<p>则执行如下命令：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install gcc gcc-c++ libstdc++-devel </span><br><span class="line">make MALLOC=libc</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果出现</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">server.c: 在函数‘iAmMaster’中: server.c:4964:1: 警告:在有返回值的函数中,控制流程到达函数尾 [-Wreturn-type]</span><br><span class="line">....</span><br></pre></td></tr></tbody></table></figure>
+
+<p>则系统gcc版本太低<br>解决gcc版本过低问题<br>安装scl源</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install centos-release-scl scl-utils-build</span><br></pre></td></tr></tbody></table></figure>
+
+<p>列出scl可用源</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum list all --enablerepo='centos-sclo-rh'</span><br></pre></td></tr></tbody></table></figure>
+
+<p>安装8版本的gcc、gcc-c++、gdb工具链（toolchian）</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install -y devtoolset-8-toolchain</span><br><span class="line">scl enable devtoolset-8 bash</span><br><span class="line">gcc --version</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="三、安装Redis"><a href="#三、安装Redis" class="headerlink" title="三、安装Redis"></a>三、安装Redis</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></tbody></table></figure>
+
+<p>启动Redis</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server</span><br></pre></td></tr></tbody></table></figure>
+
+<p>如果报如下错误，则根据提示修改以下内容：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sysctl vm.overcommit_memory=1</span><br><span class="line">echo 511 &gt; /proc/sys/net/core/somaxconn</span><br><span class="line">echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled</span><br><span class="line">redis-server</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h2><p>修改安装目录下的redis.conf文件</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /usr/local/redis-6.0.5/redis.conf </span><br></pre></td></tr></tbody></table></figure>
+
+<p>修改以下配置：</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="built_in">bind</span> 127.0.0.1 <span class="comment"># 将这行代码注释，监听所有的ip地址，外网可以访问</span></span></span><br><span class="line">protected-mode no # 把yes改成no，允许外网访问</span><br><span class="line">daemonize yes # 把no改成yes，后台运行</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">找到如下行：<span class="comment">#requirepass foobared，并改为</span></span></span><br><span class="line">requirepass XXXXXX （其中XXXXXX就是要设置的密码）</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="五、启动或停止"><a href="#五、启动或停止" class="headerlink" title="五、启动或停止"></a>五、启动或停止</h2><p>redis提供了服务端命令和客户端命令：</p>
+<ul>
+<li>redis-server 服务端命令，可以包含以下参数：<br>start 启动<br>stop 停止</li>
+<li>redis-cli 客户端控制台，包含参数：<br>-h xxx 指定服务端地址，缺省值是127.0.0.1<br>-p xxx 指定服务端端口，缺省值是6379</li>
+</ul>
+<h2 id="六、设置开机启动"><a href="#六、设置开机启动" class="headerlink" title="六、设置开机启动"></a>六、设置开机启动</h2><ol>
+<li>输入命令，新建文件</li>
 </ol>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">any</span> = <span class="number">1</span>;</span><br><span class="line">x = <span class="string">'Is time'</span>;</span><br><span class="line">x = <span class="literal">false</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/init.d/redis</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="2-Null和Undefined"><a href="#2-Null和Undefined" class="headerlink" title="2. Null和Undefined"></a>2. Null和Undefined</h2><h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>在 JavaScript 中 null 表示 “”什么都没有””。<br>null是一个只有一个值的特殊类型。表示一个空对象引用。<br>用 type of 检测 null 返回是 object。</p>
-<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>在 JavaScript 中, undefined 是一个没有设置值的变量。</p>
-<p>type of一个没有值的变量会返回 undefined。</p>
-<p>Null 和 Undefined 是其他任何类型（包括 void）的子类型，可以赋值给其它类型，如数字类型，此时，赋值后的类型会变成 null 或 undefined。而在TypeScript中启用严格的空校验（–strictNullChecks）特性，就可以使得null 和 undefined 只能被赋值给 void 或本身对应的类型</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//启用严格的空校验(--strictNullChecks)</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行错误</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行错误</span></span><br></pre></td></tr></tbody></table></figure>
+<p>输入下面内容：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment"># chkconfig:   2345 90 10</span></span><br><span class="line"><span class="comment"># description:  Redis is a persistent key-value database</span></span><br><span class="line">PATH=/usr/local/bin:/sbin:/usr/bin:/bin</span><br><span class="line"></span><br><span class="line">REDISPORT=6379</span><br><span class="line">EXEC=/usr/local/bin/redis-server</span><br><span class="line">REDIS_CLI=/usr/local/bin/redis-cli</span><br><span class="line"></span><br><span class="line">PIDFILE=/var/run/redis.pid</span><br><span class="line"></span><br><span class="line">CONF=<span class="string">""</span>/usr/local/redis-6.0.5/redis.conf<span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> <span class="string">""</span><span class="variable">$1</span><span class="string">""</span> <span class="keyword">in</span>  </span><br><span class="line">    start)  </span><br><span class="line">        <span class="keyword">if</span> [ -f <span class="variable">$PIDFILE</span> ]  </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span><span class="variable">$PIDFILE</span> exists, process is already running or crashed<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Starting Redis server...<span class="string">""</span>  </span><br><span class="line">                <span class="variable">$EXEC</span> <span class="variable">$CONF</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        <span class="keyword">if</span> [ <span class="string">""</span>$?<span class="string">""</span>=<span class="string">""</span>0<span class="string">""</span> ]   </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">              <span class="built_in">echo</span> <span class="string">""</span>Redis is running...<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        ;;  </span><br><span class="line">    stop)  </span><br><span class="line">        <span class="keyword">if</span> [ ! -f <span class="variable">$PIDFILE</span> ]  </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span><span class="variable">$PIDFILE</span> does not exist, process is not running<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">                PID=$(<span class="built_in">cat</span> <span class="variable">$PIDFILE</span>)  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Stopping ...<span class="string">""</span>  </span><br><span class="line">                <span class="variable">$REDIS_CLI</span> -p <span class="variable">$REDISPORT</span> SHUTDOWN  </span><br><span class="line">                <span class="keyword">while</span> [ -x <span class="variable">${PIDFILE}</span> ]  </span><br><span class="line">               <span class="keyword">do</span>  </span><br><span class="line">                    <span class="built_in">echo</span> <span class="string">""</span>Waiting <span class="keyword">for</span> Redis to shutdown ...<span class="string">""</span>  </span><br><span class="line">                    <span class="built_in">sleep</span> 1  </span><br><span class="line">                <span class="keyword">done</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Redis stopped<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        ;;  </span><br><span class="line">   restart|force-reload)  </span><br><span class="line">        <span class="variable">${0}</span> stop  </span><br><span class="line">        <span class="variable">${0}</span> start  </span><br><span class="line">        ;;  </span><br><span class="line">  *)  </span><br><span class="line">    <span class="built_in">echo</span> <span class="string">""</span>Usage: /etc/init.d/redis {start|stop|restart|force-reload}<span class="string">""</span> &gt;&amp;2  </span><br><span class="line">        <span class="built_in">exit</span> 1  </span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 启用 --strictNullChecks</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span> | <span class="literal">null</span> | <span class="literal">undefined</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行正确</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="3-never类型"><a href="#3-never类型" class="headerlink" title="3. never类型"></a>3. never类型</h2><p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环）</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">never</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">y</span>: <span class="built_in">number</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行错误，数字类型不能转为 never 类型</span></span><br><span class="line">x = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 never类型</span></span><br><span class="line">x = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 数字类型</span></span><br><span class="line">y = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是抛出异常的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">error</span>(<span class="params">message: <span class="built_in">string</span></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(message);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是无法被执行到的终止点的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) {}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="二、TypeScript-变量声明"><a href="#二、TypeScript-变量声明" class="headerlink" title="二、TypeScript 变量声明"></a>二、TypeScript 变量声明</h1><ol>
-<li>声明变量的类型及初始值：</li>
-</ol>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] : [类型] = 值;</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span> = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
-
+<p>然后保存退出</p>
+<p>注意：以下信息需要根据安装目录进行调整：</p>
+<blockquote>
+<p>EXEC=/usr/local/bin/redis-server # 执行脚本的地址</p>
+<p>REDIS_CLI=/usr/local/bin/redis-cli # 客户端执行脚本的地址</p>
+<p>PIDFILE=/var/run/redis.pid # 进程id文件地址</p>
+<p>CONF=””/usr/local/src/redis-3.0.2/redis.conf”” #配置文件地址</p>
+</blockquote>
 <ol start="2">
-<li>声明变量的类型，但没有初始值，变量值会设置为 undefined：</li>
+<li>设置权限</li>
 </ol>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名]: [类型];</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">chmod</span> 755 /etc/init.d/redis</span><br></pre></td></tr></tbody></table></figure>
 
 <ol start="3">
-<li>声明变量并初始值，但不设置类型，该变量可以是任意类型：</li>
+<li>启动测试</li>
 </ol>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] = 值;</span><br><span class="line"><span class="keyword">var</span> uname = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/redis start</span><br></pre></td></tr></tbody></table></figure>
+
+<p>启动成功会提示如下信息：</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Starting Redis server...</span><br><span class="line">Redis is running...</span><br></pre></td></tr></tbody></table></figure>
 
 <ol start="4">
-<li>声明变量没有设置类型和初始值，类型可以是任意类型，默认初始值为 undefined：</li>
+<li>设置开机自启动</li>
 </ol>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名];</span><br><span class="line"><span class="keyword">var</span> uname;</span><br></pre></td></tr></tbody></table></figure>
-
-<p><strong>注意</strong>:变量不要使用 name 否则会与 DOM 中的全局 window 对象下的 name 属性出现了重名。</p>
-<h3 id="类型断言"><a href="#类型断言" class="headerlink" title="类型断言"></a>类型断言</h3><p>类型断言可以用来手动指定一个值的类型，即允许变量从一种类型更改为另一种类型。<br>语法格式：</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;类型&gt; 值</span><br></pre></td></tr></tbody></table></figure>
-
-<p>或</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值 as 类型</span><br></pre></td></tr></tbody></table></figure>
-
-<p>示例：</p>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'1'</span></span><br><span class="line"><span class="keyword">var</span> <span class="attr">str2</span>:<span class="built_in">number</span> = &lt;<span class="built_in">number</span>&gt;&lt;<span class="built_in">any</span>&gt; str <span class="comment">//str、str2是string类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str2)</span><br></pre></td></tr></tbody></table></figure>
-
-<p><em><strong>个人理解</strong></em></p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">类型断言不是类型强制转换，而是类型选择。只是在特定地点强制认为该变量的类型为断言类型。</span><br><span class="line">例如：</span><br><span class="line">val变量为联合类型number和string,即val既是number类型，也是string类型，当代码中需要返回val的长度时，val.length就会报错，因为number类型没有length方法。</span><br><span class="line">访问联合类型值的属性时，这个属性必须是所有可能类型的共有属性</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><p>变量作用域指定了变量定义的位置。</p>
-<p>程序中变量的可用性由变量作用域决定。</p>
-<p>TypeScript 有以下几种作用域：</p>
-<ul>
-<li><strong>全局作用域</strong> ：  全局变量定义在程序结构的外部，它可以在你代码的任何位置使用。</li>
-<li><strong>类作用域</strong>  ：    这个变量也可以称为 字段。类变量声明在一个类里头，但在类的方法外面。 该变量可以通过类的对象来访问。类变量也可以是静态的，静态的变量可以通过类名直接访问。</li>
-<li><strong>局部作用域</strong> ：   局部变量，局部变量只能在声明它的一个代码块（如：方法）中使用。</li>
-</ul>
-<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> global_num = <span class="number">12</span>          <span class="comment">// 全局变量</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Numbers</span> { </span><br><span class="line">   num_val = <span class="number">13</span>;             <span class="comment">// 实例变量</span></span><br><span class="line">   <span class="keyword">static</span> sval = <span class="number">10</span>;         <span class="comment">// 静态变量</span></span><br><span class="line">   </span><br><span class="line">   <span class="title function_">storeNum</span>():<span class="built_in">void</span> { </span><br><span class="line">      <span class="keyword">var</span> local_num = <span class="number">14</span>;    <span class="comment">// 局部变量</span></span><br><span class="line">   } </span><br><span class="line">} </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>全局变量为: <span class="string">""</span>+global_num)  </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Numbers</span>.<span class="property">sval</span>)   <span class="comment">// 静态变量</span></span><br><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Numbers</span>(); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span>实例变量: <span class="string">""</span>+obj.<span class="property">num_val</span>)</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chkconfig --add /etc/init.d/redis</span><br><span class="line">sudo chkconfig redis on</span><br></pre></td></tr></tbody></table></figure>
 <p>“</p>
 
                 
@@ -641,7 +581,7 @@ string
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/typescript-ji-chu-yu-fa-ru-men/">http://example.com/2022/04/08/typescript-ji-chu-yu-fa-ru-men/</a>
+                    <a href="http://example.com/2022/01/01/linux-an-zhuang-redis/">http://example.com/2022/01/01/linux-an-zhuang-redis/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -678,7 +618,19 @@ string
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                                    <span class="chip bg-color">环境搭建</span>
+                                </a>
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                                <a href="/tags/redis/">
+                                    <span class="chip bg-color">redis</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -854,13 +806,13 @@ string
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/typescript-lei/">
+                <a href="/2022/01/01/mysql-an-zhuang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="MySQL安装">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">MySQL安装</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -871,7 +823,7 @@ string
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -880,6 +832,22 @@ string
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/mysql/">
+                        <span class="chip bg-color">mysql</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -891,13 +859,13 @@ string
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/linux-an-zhuang-redis/">
+                <a href="/2022/01/01/linux-an-zhuang-jdk1.8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="Linux安装JDK1.8">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Linux安装JDK1.8</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -908,7 +876,7 @@ string
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -917,6 +885,22 @@ string
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                    <a href="/tags/Java/">
+                        <span class="chip bg-color">Java</span>
+                    </a>
+                    
                 </div>
                 
             </div>

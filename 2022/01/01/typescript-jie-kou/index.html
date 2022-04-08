@@ -4,16 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# Linux安装JDK1.8
-1、检查系统中的jdk版本1java -version
-
-2、检测jdk安装包1rpm -qa | grep java
-
-3、卸载openjdk1rpm -e --nodeps xxxxxxx
-
-或者
-1y">
+    <meta name="keywords" content="TypeScript接口, 小狼">
+    <meta name="description" content="接口接口是一系列抽象方法的声明，是一些方法特征的集合，这些方法都应该是抽象的，需要由具体的类去实现，然后第三方就可以通过这组抽象方法调用，让具体的类执行具体的方法。
+1234567891011121314151617181920212223">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +20,7 @@
 
     
 
-    <title>小狼</title>
+    <title>TypeScript接口 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -319,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">TypeScript接口</h1>
                 </div>
             </div>
         </div>
@@ -438,9 +431,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TypeScript/">
+                                <span class="chip bg-color">TypeScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -452,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -473,48 +474,20 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# Linux安装JDK1.8</p>
-<h2 id="1、检查系统中的jdk版本"><a href="#1、检查系统中的jdk版本" class="headerlink" title="1、检查系统中的jdk版本"></a>1、检查系统中的jdk版本</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
+                <h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><p>接口是一系列抽象方法的声明，是一些方法特征的集合，这些方法都应该是抽象的，需要由具体的类去实现，然后第三方就可以通过这组抽象方法调用，让具体的类执行具体的方法。</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法</span></span><br><span class="line"><span class="keyword">interface</span> interface_name{</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">//示例</span></span><br><span class="line"><span class="keyword">interface</span> <span class="title class_">IPerson</span> { </span><br><span class="line">    <span class="attr">firstName</span>:<span class="built_in">string</span>, </span><br><span class="line">    <span class="attr">lastName</span>:<span class="built_in">string</span>, </span><br><span class="line">    <span class="attr">sayHi</span>: <span class="function">()=&gt;</span><span class="built_in">string</span> </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> <span class="attr">customer</span>:<span class="title class_">IPerson</span> = { </span><br><span class="line">    <span class="attr">firstName</span>:<span class="string">""</span><span class="title class_">Tom</span><span class="string">""</span>,</span><br><span class="line">    <span class="attr">lastName</span>:<span class="string">""</span><span class="title class_">Hanks</span><span class="string">""</span>, </span><br><span class="line">    <span class="attr">sayHi</span>: ():<span class="function"><span class="params">string</span> =&gt;</span>{<span class="keyword">return</span> <span class="string">""</span><span class="title class_">Hi</span> there<span class="string">""</span>} </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span><span class="title class_">Customer</span> 对象 <span class="string">""</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(customer.<span class="property">firstName</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(customer.<span class="property">lastName</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(customer.<span class="title function_">sayHi</span>())  </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> <span class="attr">employee</span>:<span class="title class_">IPerson</span> = { </span><br><span class="line">    <span class="attr">firstName</span>:<span class="string">""</span><span class="title class_">Jim</span><span class="string">""</span>,</span><br><span class="line">    <span class="attr">lastName</span>:<span class="string">""</span><span class="title class_">Blakes</span><span class="string">""</span>, </span><br><span class="line">    <span class="attr">sayHi</span>: ():<span class="function"><span class="params">string</span> =&gt;</span>{<span class="keyword">return</span> <span class="string">""</span><span class="title class_">Hello</span>!!!<span class="string">""</span>} </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">""</span><span class="title class_">Employee</span>  对象 <span class="string">""</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(employee.<span class="property">firstName</span>) </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(employee.<span class="property">lastName</span>)</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="2、检测jdk安装包"><a href="#2、检测jdk安装包" class="headerlink" title="2、检测jdk安装包"></a>2、检测jdk安装包</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="联合类型接口"><a href="#联合类型接口" class="headerlink" title="联合类型接口"></a>联合类型接口</h2><figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">RunOptions</span> { </span><br><span class="line">    <span class="attr">program</span>:<span class="built_in">string</span>; </span><br><span class="line">    <span class="attr">commandline</span>:<span class="built_in">string</span>[]|<span class="built_in">string</span>|(<span class="function">()=&gt;</span><span class="built_in">string</span>); </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="comment">// commandline 是字符串</span></span><br><span class="line"><span class="keyword">var</span> <span class="attr">options</span>:<span class="title class_">RunOptions</span> = {<span class="attr">program</span>:<span class="string">""</span>test1<span class="string">""</span>,<span class="attr">commandline</span>:<span class="string">""</span><span class="title class_">Hello</span><span class="string">""</span>}; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(options.<span class="property">commandline</span>)  </span><br><span class="line"> </span><br><span class="line"><span class="comment">// commandline 是字符串数组</span></span><br><span class="line">options = {<span class="attr">program</span>:<span class="string">""</span>test1<span class="string">""</span>,<span class="attr">commandline</span>:[<span class="string">""</span><span class="title class_">Hello</span><span class="string">""</span>,<span class="string">""</span><span class="title class_">World</span><span class="string">""</span>]}; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(options.<span class="property">commandline</span>[<span class="number">0</span>]); </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(options.<span class="property">commandline</span>[<span class="number">1</span>]);  </span><br><span class="line"> </span><br><span class="line"><span class="comment">// commandline 是一个函数表达式</span></span><br><span class="line">options = {<span class="attr">program</span>:<span class="string">""</span>test1<span class="string">""</span>,<span class="attr">commandline</span>:<span class="function">()=&gt;</span>{<span class="keyword">return</span> <span class="string">""</span>**<span class="title class_">Hello</span> <span class="title class_">World</span>**<span class="string">""</span>;}}; </span><br><span class="line">	<span class="comment">//方法需要额外定义接收</span></span><br><span class="line"><span class="keyword">var</span> <span class="attr">fn</span>:<span class="built_in">any</span> = options.<span class="property">commandline</span>; </span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">fn</span>());</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="3、卸载openjdk"><a href="#3、卸载openjdk" class="headerlink" title="3、卸载openjdk"></a>3、卸载openjdk</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxxxxxx</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="接口和数组"><a href="#接口和数组" class="headerlink" title="接口和数组"></a>接口和数组</h2><p>接口中我们可以将数组的索引值和元素设置为不同的类型，索引值可以是数字或字符串</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> namelist { </span><br><span class="line">   [<span class="attr">index</span>:<span class="built_in">number</span>]:<span class="built_in">string</span> </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> <span class="attr">list2</span>:namelist = [<span class="string">""</span><span class="title class_">John</span><span class="string">""</span>,<span class="number">1</span>,<span class="string">""</span><span class="title class_">Bran</span><span class="string">""</span>] <span class="comment">// 错误元素 1 不是 string 类型</span></span><br><span class="line"><span class="keyword">interface</span> ages { </span><br><span class="line">   [<span class="attr">index</span>:<span class="built_in">string</span>]:<span class="built_in">number</span> </span><br><span class="line">} </span><br><span class="line"> </span><br><span class="line"><span class="keyword">var</span> <span class="attr">agelist</span>:ages; </span><br><span class="line">agelist[<span class="string">""</span><span class="title class_">John</span><span class="string">""</span>] = <span class="number">15</span>   <span class="comment">// 正确 </span></span><br><span class="line">agelist[<span class="number">2</span>] = <span class="string">""</span>nine<span class="string">""</span>   <span class="comment">// 错误</span></span><br></pre></td></tr></tbody></table></figure>
 
-<p>或者</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum remove *openjdk*</span><br></pre></td></tr></tbody></table></figure>
+<p><em><strong>个人理解</strong></em></p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有点像java中的linkedhashmap结构</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="4、安装新的jdk"><a href="#4、安装新的jdk" class="headerlink" title="4、安装新的jdk"></a>4、安装新的jdk</h2><p>首先到jdk官网上下载你想要的jdk版本。官网由于证书问题wget 不能直接下载，需要加忽略证书和请求头。</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate --no-cookies --header ""Cookie: oraclelicense=accept-securebackup-cookie"" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="接口继承"><a href="#接口继承" class="headerlink" title="接口继承"></a>接口继承</h2><p>接口继承就是说接口可以通过其他接口来扩展自己<br>TypeScript允许接口继承多个接口<br>继承关键字<strong>extends</strong>。</p>
+<figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//单接口继承语法格式</span></span><br><span class="line">child_interface_name <span class="keyword">extends</span> super_interface_name</span><br><span class="line"></span><br><span class="line"><span class="comment">//多接口继承语法格式</span></span><br><span class="line">child_interface_name <span class="keyword">extends</span> super_interface_name1,superinterface_name2,.........</span><br></pre></td></tr></tbody></table></figure>
 
-<p>添加执行权限：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x jdk-8u131-linux-x64.rpm </span><br></pre></td></tr></tbody></table></figure>
-
-<p>执行rpm进行安装</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
-
-<p>查看JDK是否安装成功</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
-
-<p>查看JDK的安装路径，（一般默认的路径：/usr/java/jdk1.8.0_131）<br>移动到/usr/local下</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/java /usr/loacl</span><br></pre></td></tr></tbody></table></figure>
-
-<ol>
-<li><p>配置jdk环境变量，打开/etc/profile配置文件，将下面配置拷贝进去。export命令用于将shell变量输出为环境变量。</p>
-<p>注：在linux下以冒号分隔不同的路径，而windows下是分号。</p>
-<p>注：引用变量在linux下是$变量名, 在windows下是%变量名%</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<ul>
-<li><p>/etc/profile</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>set java environment</span><br><span class="line">JAVA<span class="built_in">_</span>HOME=/usr/local/jdk1.8.0<span class="built_in">_</span>211</span><br><span class="line">CLASSPATH=.:<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/lib</span><br><span class="line">PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME CLASSPATH PATH</span><br></pre></td></tr></tbody></table></figure></li>
-</ul>
-<ol start="3">
-<li><p>重新加载/etc/profile配置文件，并测试</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>判断JDK是否安装成功</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></tbody></table></figure></li>
-</ol>
-<p>“</p>
 
                 
             </div>
@@ -541,7 +514,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/linux-an-zhuang-jdk1.8/">http://example.com/2022/04/08/linux-an-zhuang-jdk1.8/</a>
+                    <a href="http://example.com/2022/01/01/typescript-jie-kou/">http://example.com/2022/01/01/typescript-jie-kou/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -578,7 +551,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/TypeScript/">
+                                    <span class="chip bg-color">TypeScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -754,13 +735,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/typescript-han-shu/">
+                <a href="/2022/01/01/vue-xue-qian-zhun-bei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="VUE学前准备">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">VUE学前准备</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -771,7 +752,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -780,6 +761,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
+                    <a href="/tags/VUE/">
+                        <span class="chip bg-color">VUE</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -791,13 +784,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/typescript-lei/">
+                <a href="/2022/01/01/typescript-ji-chu-yu-fa-ru-men/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="TypeScript基础语法">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">TypeScript基础语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -808,7 +801,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -817,6 +810,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
                 </div>
                 
             </div>

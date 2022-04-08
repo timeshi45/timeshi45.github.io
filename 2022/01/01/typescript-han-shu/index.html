@@ -4,10 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="小狼">
-    <meta name="description" content="“# linux安装redis
-一、进入redis官网寻找要下载的版本：https://redis.io/将下载地址链接复制下来： http://download.redis.io/releases/redis-6.0.5.tar.gz
-二">
+    <meta name="keywords" content="TypeScript函数, 小狼">
+    <meta name="description" content="TypeScript函数函数是一组一起执行一个任务的语句。****可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。
+1234function function_name():return_type">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +20,7 @@
 
     
 
-    <title>小狼</title>
+    <title>TypeScript函数 | 小狼</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">TypeScript函数</h1>
                 </div>
             </div>
         </div>
@@ -432,9 +431,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/TypeScript/">
+                                <span class="chip bg-color">TypeScript</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                <span class="chip bg-color">前端</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -446,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-08
+                    2022-01-01
                 </div>
                 
 
@@ -467,84 +474,53 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>“# linux安装redis</p>
-<h2 id="一、进入redis官网寻找要下载的版本：https-redis-io"><a href="#一、进入redis官网寻找要下载的版本：https-redis-io" class="headerlink" title="一、进入redis官网寻找要下载的版本：https://redis.io/"></a>一、进入redis官网寻找要下载的版本：<a target="_blank" rel="noopener" href="https://redis.io/">https://redis.io/</a></h2><p>将下载地址链接复制下来： <a target="_blank" rel="noopener" href="http://download.redis.io/releases/redis-6.0.5.tar.gz">http://download.redis.io/releases/redis-6.0.5.tar.gz</a></p>
-<h2 id="二、在线下载redis"><a href="#二、在线下载redis" class="headerlink" title="二、在线下载redis"></a>二、在线下载redis</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">wget  http://download.redis.io/releases/redis-6.0.5.tar.gz</span><br></pre></td></tr></tbody></table></figure>
+                <h1 id="TypeScript函数"><a href="#TypeScript函数" class="headerlink" title="TypeScript函数"></a><strong>TypeScript函数</strong></h1><p><strong>函数是一组一起执行一个任务的语句。</strong>**<br>**<strong>可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function function_name():return_type { </span><br><span class="line"> &nbsp; &nbsp;// 语句</span><br><span class="line"> &nbsp; &nbsp;return value; </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<p>下载完成之后解压安装包并执行安装测试</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tar xzf redis-6.0.5.tar.gz</span><br><span class="line">cd redis-6.0.5</span><br><span class="line">make test</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果出现</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/sh: cc: command not found </span><br></pre></td></tr></tbody></table></figure>
-
-<p>则执行如下命令：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum -y install gcc gcc-c++ libstdc++-devel </span><br><span class="line">make MALLOC=libc</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果出现</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">server.c: 在函数‘iAmMaster’中: server.c:4964:1: 警告:在有返回值的函数中,控制流程到达函数尾 [-Wreturn-type]</span><br><span class="line">....</span><br></pre></td></tr></tbody></table></figure>
-
-<p>则系统gcc版本太低<br>解决gcc版本过低问题<br>安装scl源</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install centos-release-scl scl-utils-build</span><br></pre></td></tr></tbody></table></figure>
-
-<p>列出scl可用源</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum list all --enablerepo='centos-sclo-rh'</span><br></pre></td></tr></tbody></table></figure>
-
-<p>安装8版本的gcc、gcc-c++、gdb工具链（toolchian）</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">yum install -y devtoolset-8-toolchain</span><br><span class="line">scl enable devtoolset-8 bash</span><br><span class="line">gcc --version</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="三、安装Redis"><a href="#三、安装Redis" class="headerlink" title="三、安装Redis"></a>三、安装Redis</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make install</span><br></pre></td></tr></tbody></table></figure>
-
-<p>启动Redis</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">redis-server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>如果报如下错误，则根据提示修改以下内容：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sysctl vm.overcommit_memory=1</span><br><span class="line">echo 511 &gt; /proc/sys/net/core/somaxconn</span><br><span class="line">echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled</span><br><span class="line">redis-server</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="四、配置"><a href="#四、配置" class="headerlink" title="四、配置"></a>四、配置</h2><p>修改安装目录下的redis.conf文件</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /usr/local/redis-6.0.5/redis.conf </span><br></pre></td></tr></tbody></table></figure>
-
-<p>修改以下配置：</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="built_in">bind</span> 127.0.0.1 <span class="comment"># 将这行代码注释，监听所有的ip地址，外网可以访问</span></span></span><br><span class="line">protected-mode no # 把yes改成no，允许外网访问</span><br><span class="line">daemonize yes # 把no改成yes，后台运行</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">找到如下行：<span class="comment">#requirepass foobared，并改为</span></span></span><br><span class="line">requirepass XXXXXX （其中XXXXXX就是要设置的密码）</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="五、启动或停止"><a href="#五、启动或停止" class="headerlink" title="五、启动或停止"></a>五、启动或停止</h2><p>redis提供了服务端命令和客户端命令：</p>
 <ul>
-<li>redis-server 服务端命令，可以包含以下参数：<br>start 启动<br>stop 停止</li>
-<li>redis-cli 客户端控制台，包含参数：<br>-h xxx 指定服务端地址，缺省值是127.0.0.1<br>-p xxx 指定服务端端口，缺省值是6379</li>
+<li><strong>return_type 是返回值的类型。</strong></li>
+<li><strong>return 关键词后跟着要返回的结果。</strong></li>
+<li><strong>一般情况下，一个函数只有一个 return 语句。</strong></li>
+<li><strong>返回值的类型需要与函数定义的返回类型(return_type)一致。</strong></li>
 </ul>
-<h2 id="六、设置开机启动"><a href="#六、设置开机启动" class="headerlink" title="六、设置开机启动"></a>六、设置开机启动</h2><ol>
-<li>输入命令，新建文件</li>
-</ol>
-<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/init.d/redis</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="带参函数"><a href="#带参函数" class="headerlink" title="带参函数"></a><strong>带参函数</strong></h2><p><strong>在调用函数时，您可以向其传递值，这些值被称为参数。</strong>**<br><strong><strong>这些参数可以在函数中使用。</strong></strong><br>**<strong>您可以向函数发送多个参数，每个参数使用逗号 , 分隔：</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function func_name( param1 [:datatype], param2 [:datatype]) { &nbsp; </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">function add(x: number, y: number): number {</span><br><span class="line"> &nbsp; &nbsp;return x + y;</span><br><span class="line">}</span><br><span class="line">console.log(add(1,2))</span><br></pre></td></tr></tbody></table></figure>
 
-<p>输入下面内容：</p>
-<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment"># chkconfig:   2345 90 10</span></span><br><span class="line"><span class="comment"># description:  Redis is a persistent key-value database</span></span><br><span class="line">PATH=/usr/local/bin:/sbin:/usr/bin:/bin</span><br><span class="line"></span><br><span class="line">REDISPORT=6379</span><br><span class="line">EXEC=/usr/local/bin/redis-server</span><br><span class="line">REDIS_CLI=/usr/local/bin/redis-cli</span><br><span class="line"></span><br><span class="line">PIDFILE=/var/run/redis.pid</span><br><span class="line"></span><br><span class="line">CONF=<span class="string">""</span>/usr/local/redis-6.0.5/redis.conf<span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">case</span> <span class="string">""</span><span class="variable">$1</span><span class="string">""</span> <span class="keyword">in</span>  </span><br><span class="line">    start)  </span><br><span class="line">        <span class="keyword">if</span> [ -f <span class="variable">$PIDFILE</span> ]  </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span><span class="variable">$PIDFILE</span> exists, process is already running or crashed<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Starting Redis server...<span class="string">""</span>  </span><br><span class="line">                <span class="variable">$EXEC</span> <span class="variable">$CONF</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        <span class="keyword">if</span> [ <span class="string">""</span>$?<span class="string">""</span>=<span class="string">""</span>0<span class="string">""</span> ]   </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">              <span class="built_in">echo</span> <span class="string">""</span>Redis is running...<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        ;;  </span><br><span class="line">    stop)  </span><br><span class="line">        <span class="keyword">if</span> [ ! -f <span class="variable">$PIDFILE</span> ]  </span><br><span class="line">        <span class="keyword">then</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span><span class="variable">$PIDFILE</span> does not exist, process is not running<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">else</span>  </span><br><span class="line">                PID=$(<span class="built_in">cat</span> <span class="variable">$PIDFILE</span>)  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Stopping ...<span class="string">""</span>  </span><br><span class="line">                <span class="variable">$REDIS_CLI</span> -p <span class="variable">$REDISPORT</span> SHUTDOWN  </span><br><span class="line">                <span class="keyword">while</span> [ -x <span class="variable">${PIDFILE}</span> ]  </span><br><span class="line">               <span class="keyword">do</span>  </span><br><span class="line">                    <span class="built_in">echo</span> <span class="string">""</span>Waiting <span class="keyword">for</span> Redis to shutdown ...<span class="string">""</span>  </span><br><span class="line">                    <span class="built_in">sleep</span> 1  </span><br><span class="line">                <span class="keyword">done</span>  </span><br><span class="line">                <span class="built_in">echo</span> <span class="string">""</span>Redis stopped<span class="string">""</span>  </span><br><span class="line">        <span class="keyword">fi</span>  </span><br><span class="line">        ;;  </span><br><span class="line">   restart|force-reload)  </span><br><span class="line">        <span class="variable">${0}</span> stop  </span><br><span class="line">        <span class="variable">${0}</span> start  </span><br><span class="line">        ;;  </span><br><span class="line">  *)  </span><br><span class="line">    <span class="built_in">echo</span> <span class="string">""</span>Usage: /etc/init.d/redis {start|stop|restart|force-reload}<span class="string">""</span> &gt;&amp;2  </span><br><span class="line">        <span class="built_in">exit</span> 1  </span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
+<h3 id="可选参数"><a href="#可选参数" class="headerlink" title="可选参数"></a><strong>可选参数</strong></h3><p><strong>在 TypeScript 函数里，如果我们定义了参数，则我们必须传入这些参数，除非将这些参数设置为可选，可选参数使用问号标识 ？。</strong>**<br>**<strong>实例</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, lastName?: string) {</span><br><span class="line"> &nbsp; &nbsp;if (lastName)</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName + "" "" + lastName;</span><br><span class="line"> &nbsp; &nbsp;else</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName;</span><br><span class="line">}</span><br><span class="line"> </span><br><span class="line">let result1 = buildName(""Bob""); &nbsp;// 正确</span><br><span class="line">let result2 = buildName(""Bob"", ""Adams"", ""Sr.""); &nbsp;// 错误，参数太多了</span><br><span class="line">let result3 = buildName(""Bob"", ""Adams""); &nbsp;// 正确</span><br></pre></td></tr></tbody></table></figure>
 
-<p>然后保存退出</p>
-<p>注意：以下信息需要根据安装目录进行调整：</p>
-<blockquote>
-<p>EXEC=/usr/local/bin/redis-server # 执行脚本的地址</p>
-<p>REDIS_CLI=/usr/local/bin/redis-cli # 客户端执行脚本的地址</p>
-<p>PIDFILE=/var/run/redis.pid # 进程id文件地址</p>
-<p>CONF=””/usr/local/src/redis-3.0.2/redis.conf”” #配置文件地址</p>
-</blockquote>
-<ol start="2">
-<li>设置权限</li>
-</ol>
-<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">chmod</span> 755 /etc/init.d/redis</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a><strong>默认参数</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function function_name(param1[:type],param2[:type] = default_value) { </span><br><span class="line">}</span><br><span class="line">//示例</span><br><span class="line">function calculate_discount(price, rate) {</span><br><span class="line"> &nbsp; &nbsp;if (rate === void 0) { rate = 0.50; }</span><br><span class="line"> &nbsp; &nbsp;var discount = price * rate;</span><br><span class="line"> &nbsp; &nbsp;console.log(""计算结果: "", discount);</span><br><span class="line">}</span><br><span class="line">calculate_discount(1000);</span><br><span class="line">calculate_discount(1000, 0.30);</span><br></pre></td></tr></tbody></table></figure>
 
-<ol start="3">
-<li>启动测试</li>
-</ol>
-<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/redis start</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="剩余参数（可变长度参数"><a href="#剩余参数（可变长度参数" class="headerlink" title="剩余参数（可变长度参数)"></a><strong>剩余参数（可变长度参数)</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, ...restOfName: string[]) {</span><br><span class="line"> &nbsp; &nbsp;return firstName + "" "" + restOfName.join("" "");</span><br><span class="line">}</span><br><span class="line"> &nbsp;</span><br><span class="line">let employeeName = buildName(""Joseph"", ""Samuel"", ""Lucas"", ""MacKinzie"");</span><br></pre></td></tr></tbody></table></figure>
 
-<p>启动成功会提示如下信息：</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Starting Redis server...</span><br><span class="line">Redis is running...</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a><strong>匿名函数</strong></h3><p><strong>匿名函数是一个没有函数名的函数。</strong>**<br><strong><strong>匿名函数在程序运行时动态声明，除了没有函数名外，其他的与标准函数一样。</strong></strong><br>**<strong>我们可以将匿名函数赋值给一个变量，这种表达式就成为函数表达式。</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var res = function([arguments]){...}</span><br><span class="line">//示例 不带参数的匿名函数</span><br><span class="line">var msg = function() { </span><br><span class="line"> &nbsp; &nbsp;return ""hello world""; &nbsp;</span><br><span class="line">} </span><br><span class="line">console.log(msg())</span><br><span class="line"></span><br><span class="line">//带参数的匿名函数</span><br><span class="line">var res = function(a:number,b:number) { </span><br><span class="line"> &nbsp; &nbsp;return a*b; &nbsp;</span><br><span class="line">}; </span><br><span class="line">console.log(res(12,2))</span><br></pre></td></tr></tbody></table></figure>
 
-<ol start="4">
-<li>设置开机自启动</li>
-</ol>
-<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chkconfig --add /etc/init.d/redis</span><br><span class="line">sudo chkconfig redis on</span><br></pre></td></tr></tbody></table></figure>
-<p>“</p>
+<h3 id="匿名函数自调用"><a href="#匿名函数自调用" class="headerlink" title="匿名函数自调用"></a><strong>匿名函数自调用</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function () { </span><br><span class="line"> &nbsp; &nbsp;var x = ""Hello!!""; &nbsp; </span><br><span class="line"> &nbsp; &nbsp;console.log(x) &nbsp; &nbsp; </span><br><span class="line"> })()</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a><strong>构造函数</strong></h3><p>** TypeScript 也支持使用 JavaScript 内置的构造函数 Function() 来定义函数：**</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> var res = new Function ([arg1[, arg2[, ...argN]],] functionBody)</span><br><span class="line"> //参数说明</span><br><span class="line"> //arg1, arg2, ... argN：参数列表。</span><br><span class="line"> //functionBody：一个含有包括函数定义的 JavaScript 语句的字符串。</span><br><span class="line"> </span><br><span class="line"> //示例</span><br><span class="line">var myFunction = new Function(""a"", ""b"", ""return a * b""); </span><br><span class="line">var x = myFunction(4, 3); </span><br><span class="line">console.log(x);</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a><strong>递归函数</strong></h3><p><strong>递归函数即在函数内调用函数本身</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//示例</span><br><span class="line">function factorial(number) {</span><br><span class="line">    if (number &lt;= 0) {         // 停止执行</span><br><span class="line">        return 1; </span><br><span class="line">    } else {   </span><br><span class="line">        return (number * factorial(number - 1));     // 调用自身</span><br><span class="line">    } </span><br><span class="line">}; </span><br><span class="line">console.log(factorial(6));      // 输出 720</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="Lambada函数"><a href="#Lambada函数" class="headerlink" title="Lambada函数"></a><strong>Lambada函数</strong></h3><p><strong>Lambada函数也称之为箭头函数</strong>**<br>**<strong>箭头函数表达式的语法比函数表达式更短</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//语法</span><br><span class="line">( [param1, parma2,…param n] )=&gt;statement;</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var foo = (x:number) =&gt;10+x</span><br><span class="line">console.log(foo(100))</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a><strong>函数重载</strong></h3><p><strong>重载是方法名字相同，而参数不同，返回类型可以相同也可以不同。</strong>**<br>**<strong>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">TypeScript</span><br><span class="line">function disp(s1:string):void; </span><br><span class="line">function disp(n1:number,s1:string):void; </span><br><span class="line"> </span><br><span class="line">function disp(x:any,y?:any):void { </span><br><span class="line">    console.log(x); </span><br><span class="line">    console.log(y); </span><br><span class="line">} </span><br><span class="line">disp(""abc"") </span><br><span class="line">disp(1,""xyz"");</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a><strong>元组</strong></h3><p><strong>数组中元素的数据类型都一般是相同的（any[] 类型的数组可以不同），如果存储的元素数据类型不同，则需要使用元组。</strong>**<br>**<strong>元组中允许存储不同类型的元素，元组可以作为参数传递给函数。</strong></p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//创建元组</span><br><span class="line">var tuple_name = [value1,value2,value3...]</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var mytuple = [10,""tom""]</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="元组运算"><a href="#元组运算" class="headerlink" title="元组运算"></a><strong>元组运算</strong></h4><ul>
+<li><strong>push() 向元组添加元素，添加在最后面</strong></li>
+<li><strong>pop()从元组中移除元素（最后一个),并返回移除的元素</strong></li>
+</ul>
+<h4 id="更新元组"><a href="#更新元组" class="headerlink" title="更新元组"></a><strong>更新元组</strong></h4><p><strong>元组是可变的，所以可对元组进行修改</strong>**<br>**<strong>根据指定的索引更新指定元素</strong></p>
+<h4 id="解构元组"><a href="#解构元组" class="headerlink" title="解构元组"></a><strong>解构元组</strong></h4><p><em><strong><strong>个人理解</strong></strong></em>** 类似于java的顺序取值**</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a =[10,""Runoob""] </span><br><span class="line">var [b,c] = a </span><br><span class="line">console.log( b )  </span><br><span class="line">console.log( c )</span><br></pre></td></tr></tbody></table></figure>
+
 
                 
             </div>
@@ -571,7 +547,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/08/linux-an-zhuang-redis/">http://example.com/2022/04/08/linux-an-zhuang-redis/</a>
+                    <a href="http://example.com/2022/01/01/typescript-han-shu/">http://example.com/2022/01/01/typescript-han-shu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -608,7 +584,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/TypeScript/">
+                                    <span class="chip bg-color">TypeScript</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                                    <span class="chip bg-color">前端</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -784,13 +768,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/04/08/typescript-ji-chu-yu-fa-ru-men/">
+                <a href="/2022/01/01/typescript-ji-chu-yu-fa-ru-men/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="TypeScript基础语法">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">TypeScript基础语法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -801,7 +785,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                         </span>
                         <span class="publish-author">
                             
@@ -810,6 +794,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/TypeScript/">
+                        <span class="chip bg-color">TypeScript</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
+                        <span class="chip bg-color">前端</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -821,13 +817,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/08/typescript-jie-kou/">
+                <a href="/2022/01/01/linux-xia-bu-shu-nginx/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Linux安装Nginx">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Linux安装Nginx</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -838,7 +834,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-01
                             </span>
                         <span class="publish-author">
                             
@@ -847,6 +843,22 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
+                        <span class="chip bg-color">环境搭建</span>
+                    </a>
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
                 </div>
                 
             </div>
