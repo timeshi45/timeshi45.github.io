@@ -5,14 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="jdk">
-    <meta name="description" content="Linux安装JDK1.81、检查系统中的jdk版本1java -version
-
-2、检测jdk安装包1rpm -qa | grep java
-
-3、卸载openjdk1rpm -e --nodeps xxxxxxx
-
+    <meta name="description" content=" Linux安装JDK1.8
+ 1、检查系统中的jdk版本
+1java -version
+ 2、检测jdk安装包
+1rpm -qa | grep java
+ 3、卸载openjdk
+1rpm -e --nodeps xxxxxxx
 或者
-1yum r">
+1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -493,45 +494,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Linux安装JDK1-8"><a href="#Linux安装JDK1-8" class="headerlink" title="Linux安装JDK1.8"></a>Linux安装JDK1.8</h1><h2 id="1、检查系统中的jdk版本"><a href="#1、检查系统中的jdk版本" class="headerlink" title="1、检查系统中的jdk版本"></a>1、检查系统中的jdk版本</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="2、检测jdk安装包"><a href="#2、检测jdk安装包" class="headerlink" title="2、检测jdk安装包"></a>2、检测jdk安装包</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="3、卸载openjdk"><a href="#3、卸载openjdk" class="headerlink" title="3、卸载openjdk"></a>3、卸载openjdk</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxxxxxx</span><br></pre></td></tr></tbody></table></figure>
-
+                <h1 id="linux安装jdk18"><a class="markdownIt-Anchor" href="#linux安装jdk18"></a> Linux安装JDK1.8</h1>
+<h2 id="1-检查系统中的jdk版本"><a class="markdownIt-Anchor" href="#1-检查系统中的jdk版本"></a> 1、检查系统中的jdk版本</h2>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="2-检测jdk安装包"><a class="markdownIt-Anchor" href="#2-检测jdk安装包"></a> 2、检测jdk安装包</h2>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="3-卸载openjdk"><a class="markdownIt-Anchor" href="#3-卸载openjdk"></a> 3、卸载openjdk</h2>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxxxxxx</span><br></pre></td></tr></tbody></table></figure>
 <p>或者</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum remove *openjdk*</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="4、安装新的jdk"><a href="#4、安装新的jdk" class="headerlink" title="4、安装新的jdk"></a>4、安装新的jdk</h2><p>首先到jdk官网上下载你想要的jdk版本。官网由于证书问题wget 不能直接下载，需要加忽略证书和请求头。</p>
+<h2 id="4-安装新的jdk"><a class="markdownIt-Anchor" href="#4-安装新的jdk"></a> 4、安装新的jdk</h2>
+<p>首先到jdk官网上下载你想要的jdk版本。官网由于证书问题wget 不能直接下载，需要加忽略证书和请求头。</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate --no-cookies --header ""Cookie: oraclelicense=accept-securebackup-cookie"" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
-
 <p>添加执行权限：</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x jdk-8u131-linux-x64.rpm </span><br></pre></td></tr></tbody></table></figure>
-
 <p>执行rpm进行安装</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -ivh jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
-
 <p>查看JDK是否安装成功</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
-
-<p>查看JDK的安装路径，（一般默认的路径：/usr/java/jdk1.8.0_131）<br>移动到/usr/local下</p>
+<p>查看JDK的安装路径，（一般默认的路径：/usr/java/jdk1.8.0_131）<br>
+移动到/usr/local下</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv /usr/java /usr/loacl</span><br></pre></td></tr></tbody></table></figure>
-
 <ol>
-<li><p>配置jdk环境变量，打开/etc/profile配置文件，将下面配置拷贝进去。export命令用于将shell变量输出为环境变量。</p>
+<li>
+<p>配置jdk环境变量，打开/etc/profile配置文件，将下面配置拷贝进去。export命令用于将shell变量输出为环境变量。</p>
 <p>注：在linux下以冒号分隔不同的路径，而windows下是分号。</p>
 <p>注：引用变量在linux下是$变量名, 在windows下是%变量名%</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ol>
 <ul>
-<li><p>/etc/profile</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>set java environment</span><br><span class="line">JAVA<span class="built_in">_</span>HOME=/usr/local/jdk1.8.0<span class="built_in">_</span>211</span><br><span class="line">CLASSPATH=.:<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/lib</span><br><span class="line">PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME CLASSPATH PATH</span><br></pre></td></tr></tbody></table></figure></li>
+<li>
+<p>/etc/profile</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span>set java environment</span><br><span class="line">JAVA<span class="built_in">_</span>HOME=/usr/local/jdk1.8.0<span class="built_in">_</span>211</span><br><span class="line">CLASSPATH=.:<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/lib</span><br><span class="line">PATH=<span class="built_in">$</span>JAVA<span class="built_in">_</span>HOME/bin:<span class="built_in">$</span>PATH</span><br><span class="line">export JAVA<span class="built_in">_</span>HOME CLASSPATH PATH</span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ul>
 <ol start="3">
-<li><p>重新加载/etc/profile配置文件，并测试</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>判断JDK是否安装成功</p>
-<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></tbody></table></figure></li>
+<li>
+<p>重新加载/etc/profile配置文件，并测试</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p>判断JDK是否安装成功</p>
+<figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br></pre></td></tr></tbody></table></figure>
+</li>
 </ol>
 
                 

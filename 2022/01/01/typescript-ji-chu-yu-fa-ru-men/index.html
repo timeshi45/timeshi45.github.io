@@ -5,13 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="TypeScript">
-    <meta name="description" content="一.基础数据类型
+    <meta name="description" content=" 一.基础数据类型
+
 
 
 数据类型
 关键字
 描述
 示例
+
 
 
 
@@ -23,7 +25,7 @@ any
 
 字符串类型
 string
-一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)来定义多">
+一个字符系列，使用单引号（’’)或双引号(&#34;&#34;&#34;&#34;)来表示字符串类型。反引号（`)来">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -500,7 +502,8 @@ string
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一-基础数据类型"><a href="#一-基础数据类型" class="headerlink" title="一.基础数据类型"></a>一.基础数据类型</h1><table>
+                <h1 id="一基础数据类型"><a class="markdownIt-Anchor" href="#一基础数据类型"></a> 一.基础数据类型</h1>
+<table>
 <thead>
 <tr>
 <th>数据类型</th>
@@ -509,7 +512,8 @@ string
 <th>示例</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>任意类型</td>
 <td>any</td>
 <td>声明为any的变量可以用来表示整数和分数</td>
@@ -518,7 +522,7 @@ string
 <tr>
 <td>字符串类型</td>
 <td>string</td>
-<td>一个字符系列，使用单引号（’’)或双引号(“”””)来表示字符串类型。反引号（`)来定义多行文本和内嵌表达式</td>
+<td>一个字符系列，使用单引号（’’)或双引号("""")来表示字符串类型。反引号（`)来定义多行文本和内嵌表达式</td>
 <td>let num : number = 10;</td>
 </tr>
 <tr>
@@ -569,58 +573,58 @@ string
 <td>never是其他类型（包括 null 和undefined)的子类型，代表从不会出现的值</td>
 <td></td>
 </tr>
-</tbody></table>
-<h2 id="1-Any类型"><a href="#1-Any类型" class="headerlink" title="1. Any类型"></a>1. Any类型</h2><p>任意值是TypeScript针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。</p>
+</tbody>
+</table>
+<h2 id="1-any类型"><a class="markdownIt-Anchor" href="#1-any类型"></a> 1. Any类型</h2>
+<p>任意值是TypeScript针对编程时类型不明确的变量使用的一种数据类型，它常用于以下三种情况。</p>
 <ol>
 <li>变量的值会动态改变是，比如来自用户的输入，任意类型可以让这些变量跳过编译阶段的类型检查</li>
 </ol>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">any</span> = <span class="number">1</span>;</span><br><span class="line">x = <span class="string">'Is time'</span>;</span><br><span class="line">x = <span class="literal">false</span>;</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="2-Null和Undefined"><a href="#2-Null和Undefined" class="headerlink" title="2. Null和Undefined"></a>2. Null和Undefined</h2><h3 id="null"><a href="#null" class="headerlink" title="null"></a>null</h3><p>在 JavaScript 中 null 表示 “”什么都没有””。<br>null是一个只有一个值的特殊类型。表示一个空对象引用。<br>用 type of 检测 null 返回是 object。</p>
-<h3 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h3><p>在 JavaScript 中, undefined 是一个没有设置值的变量。</p>
+<h2 id="2-null和undefined"><a class="markdownIt-Anchor" href="#2-null和undefined"></a> 2. Null和Undefined</h2>
+<h3 id="null"><a class="markdownIt-Anchor" href="#null"></a> null</h3>
+<p>在 JavaScript 中 null 表示 ““什么都没有””。<br>
+null是一个只有一个值的特殊类型。表示一个空对象引用。<br>
+用 type of 检测 null 返回是 object。</p>
+<h3 id="undefined"><a class="markdownIt-Anchor" href="#undefined"></a> undefined</h3>
+<p>在 JavaScript 中, undefined 是一个没有设置值的变量。</p>
 <p>type of一个没有值的变量会返回 undefined。</p>
 <p>Null 和 Undefined 是其他任何类型（包括 void）的子类型，可以赋值给其它类型，如数字类型，此时，赋值后的类型会变成 null 或 undefined。而在TypeScript中启用严格的空校验（–strictNullChecks）特性，就可以使得null 和 undefined 只能被赋值给 void 或本身对应的类型</p>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//启用严格的空校验(--strictNullChecks)</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行错误</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行错误</span></span><br></pre></td></tr></tbody></table></figure>
-
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 启用 --strictNullChecks</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">number</span> | <span class="literal">null</span> | <span class="literal">undefined</span>;</span><br><span class="line">x = <span class="number">1</span>; <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">undefined</span>;    <span class="comment">// 运行正确</span></span><br><span class="line">x = <span class="literal">null</span>;    <span class="comment">// 运行正确</span></span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="3-never类型"><a href="#3-never类型" class="headerlink" title="3. never类型"></a>3. never类型</h2><p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环）</p>
+<h2 id="3-never类型"><a class="markdownIt-Anchor" href="#3-never类型"></a> 3. never类型</h2>
+<p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环）</p>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span>: <span class="built_in">never</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">y</span>: <span class="built_in">number</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行错误，数字类型不能转为 never 类型</span></span><br><span class="line">x = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 never类型</span></span><br><span class="line">x = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运行正确，never 类型可以赋值给 数字类型</span></span><br><span class="line">y = (<span class="function">()=&gt;</span>{ <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">'exception'</span>)})();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是抛出异常的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">error</span>(<span class="params">message: <span class="built_in">string</span></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(message);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="comment">// 返回值为 never 的函数可以是无法被执行到的终止点的情况</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">loop</span>(<span class="params"></span>): <span class="built_in">never</span> {</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) {}</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h1 id="二、TypeScript-变量声明"><a href="#二、TypeScript-变量声明" class="headerlink" title="二、TypeScript 变量声明"></a>二、TypeScript 变量声明</h1><ol>
+<h1 id="二-typescript-变量声明"><a class="markdownIt-Anchor" href="#二-typescript-变量声明"></a> 二、TypeScript 变量声明</h1>
+<ol>
 <li>声明变量的类型及初始值：</li>
 </ol>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] : [类型] = 值;</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span> = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
-
 <ol start="2">
 <li>声明变量的类型，但没有初始值，变量值会设置为 undefined：</li>
 </ol>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名]: [类型];</span><br><span class="line"><span class="keyword">var</span> <span class="attr">uname</span>:<span class="built_in">string</span>;</span><br></pre></td></tr></tbody></table></figure>
-
 <ol start="3">
 <li>声明变量并初始值，但不设置类型，该变量可以是任意类型：</li>
 </ol>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名] = 值;</span><br><span class="line"><span class="keyword">var</span> uname = <span class="string">""</span>time<span class="string">""</span>;</span><br></pre></td></tr></tbody></table></figure>
-
 <ol start="4">
 <li>声明变量没有设置类型和初始值，类型可以是任意类型，默认初始值为 undefined：</li>
 </ol>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> [变量名];</span><br><span class="line"><span class="keyword">var</span> uname;</span><br></pre></td></tr></tbody></table></figure>
-
 <p><strong>注意</strong>:变量不要使用 name 否则会与 DOM 中的全局 window 对象下的 name 属性出现了重名。</p>
-<h3 id="类型断言"><a href="#类型断言" class="headerlink" title="类型断言"></a>类型断言</h3><p>类型断言可以用来手动指定一个值的类型，即允许变量从一种类型更改为另一种类型。<br>语法格式：</p>
+<h3 id="类型断言"><a class="markdownIt-Anchor" href="#类型断言"></a> 类型断言</h3>
+<p>类型断言可以用来手动指定一个值的类型，即允许变量从一种类型更改为另一种类型。<br>
+语法格式：</p>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;类型&gt; 值</span><br></pre></td></tr></tbody></table></figure>
-
 <p>或</p>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">值 as 类型</span><br></pre></td></tr></tbody></table></figure>
-
 <p>示例：</p>
 <figure class="highlight typescript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> str = <span class="string">'1'</span></span><br><span class="line"><span class="keyword">var</span> <span class="attr">str2</span>:<span class="built_in">number</span> = &lt;<span class="built_in">number</span>&gt;&lt;<span class="built_in">any</span>&gt; str <span class="comment">//str、str2是string类型</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(str2)</span><br></pre></td></tr></tbody></table></figure>
-
 <p><em><strong>个人理解</strong></em></p>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">类型断言不是类型强制转换，而是类型选择。只是在特定地点强制认为该变量的类型为断言类型。</span><br><span class="line">例如：</span><br><span class="line">val变量为联合类型number和string,即val既是number类型，也是string类型，当代码中需要返回val的长度时，val.length就会报错，因为number类型没有length方法。</span><br><span class="line">访问联合类型值的属性时，这个属性必须是所有可能类型的共有属性</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="变量作用域"><a href="#变量作用域" class="headerlink" title="变量作用域"></a>变量作用域</h3><p>变量作用域指定了变量定义的位置。</p>
+<h3 id="变量作用域"><a class="markdownIt-Anchor" href="#变量作用域"></a> 变量作用域</h3>
+<p>变量作用域指定了变量定义的位置。</p>
 <p>程序中变量的可用性由变量作用域决定。</p>
 <p>TypeScript 有以下几种作用域：</p>
 <ul>

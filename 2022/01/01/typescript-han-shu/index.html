@@ -5,8 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="TypeScript">
-    <meta name="description" content="TypeScript函数函数是一组一起执行一个任务的语句。****可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。
-1234function function_name():return_type">
+    <meta name="description" content=" TypeScript函数
+函数是一组一起执行一个任务的语句。**
+**可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。
+1234function function_name():return_t">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -483,53 +485,65 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="TypeScript函数"><a href="#TypeScript函数" class="headerlink" title="TypeScript函数"></a><strong>TypeScript函数</strong></h1><p><strong>函数是一组一起执行一个任务的语句。</strong>**<br>**<strong>可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。</strong></p>
+                <h1 id="typescript函数"><a class="markdownIt-Anchor" href="#typescript函数"></a> <strong>TypeScript函数</strong></h1>
+<p><strong>函数是一组一起执行一个任务的语句。</strong>**<br>
+**<strong>可以把代码划分到不同的函数中。但在逻辑上，划分通常是根据每个函数执行一个特定的任务来进行的。</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function function_name():return_type { </span><br><span class="line"> &nbsp; &nbsp;// 语句</span><br><span class="line"> &nbsp; &nbsp;return value; </span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
 <ul>
 <li><strong>return_type 是返回值的类型。</strong></li>
 <li><strong>return 关键词后跟着要返回的结果。</strong></li>
 <li><strong>一般情况下，一个函数只有一个 return 语句。</strong></li>
 <li><strong>返回值的类型需要与函数定义的返回类型(return_type)一致。</strong></li>
 </ul>
-<h2 id="带参函数"><a href="#带参函数" class="headerlink" title="带参函数"></a><strong>带参函数</strong></h2><p><strong>在调用函数时，您可以向其传递值，这些值被称为参数。</strong>**<br><strong><strong>这些参数可以在函数中使用。</strong></strong><br>**<strong>您可以向函数发送多个参数，每个参数使用逗号 , 分隔：</strong></p>
+<h2 id="带参函数"><a class="markdownIt-Anchor" href="#带参函数"></a> <strong>带参函数</strong></h2>
+<p><strong>在调用函数时，您可以向其传递值，这些值被称为参数。</strong>**<br>
+<strong><strong>这些参数可以在函数中使用。</strong></strong><br>
+**<strong>您可以向函数发送多个参数，每个参数使用逗号 , 分隔：</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function func_name( param1 [:datatype], param2 [:datatype]) { &nbsp; </span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">function add(x: number, y: number): number {</span><br><span class="line"> &nbsp; &nbsp;return x + y;</span><br><span class="line">}</span><br><span class="line">console.log(add(1,2))</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="可选参数"><a href="#可选参数" class="headerlink" title="可选参数"></a><strong>可选参数</strong></h3><p><strong>在 TypeScript 函数里，如果我们定义了参数，则我们必须传入这些参数，除非将这些参数设置为可选，可选参数使用问号标识 ？。</strong>**<br>**<strong>实例</strong></p>
+<h3 id="可选参数"><a class="markdownIt-Anchor" href="#可选参数"></a> <strong>可选参数</strong></h3>
+<p><strong>在 TypeScript 函数里，如果我们定义了参数，则我们必须传入这些参数，除非将这些参数设置为可选，可选参数使用问号标识 ？。</strong>**<br>
+**<strong>实例</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, lastName?: string) {</span><br><span class="line"> &nbsp; &nbsp;if (lastName)</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName + "" "" + lastName;</span><br><span class="line"> &nbsp; &nbsp;else</span><br><span class="line"> &nbsp; &nbsp; &nbsp; &nbsp;return firstName;</span><br><span class="line">}</span><br><span class="line"> </span><br><span class="line">let result1 = buildName(""Bob""); &nbsp;// 正确</span><br><span class="line">let result2 = buildName(""Bob"", ""Adams"", ""Sr.""); &nbsp;// 错误，参数太多了</span><br><span class="line">let result3 = buildName(""Bob"", ""Adams""); &nbsp;// 正确</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a><strong>默认参数</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function function_name(param1[:type],param2[:type] = default_value) { </span><br><span class="line">}</span><br><span class="line">//示例</span><br><span class="line">function calculate_discount(price, rate) {</span><br><span class="line"> &nbsp; &nbsp;if (rate === void 0) { rate = 0.50; }</span><br><span class="line"> &nbsp; &nbsp;var discount = price * rate;</span><br><span class="line"> &nbsp; &nbsp;console.log(""计算结果: "", discount);</span><br><span class="line">}</span><br><span class="line">calculate_discount(1000);</span><br><span class="line">calculate_discount(1000, 0.30);</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="剩余参数（可变长度参数"><a href="#剩余参数（可变长度参数" class="headerlink" title="剩余参数（可变长度参数)"></a><strong>剩余参数（可变长度参数)</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, ...restOfName: string[]) {</span><br><span class="line"> &nbsp; &nbsp;return firstName + "" "" + restOfName.join("" "");</span><br><span class="line">}</span><br><span class="line"> &nbsp;</span><br><span class="line">let employeeName = buildName(""Joseph"", ""Samuel"", ""Lucas"", ""MacKinzie"");</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a><strong>匿名函数</strong></h3><p><strong>匿名函数是一个没有函数名的函数。</strong>**<br><strong><strong>匿名函数在程序运行时动态声明，除了没有函数名外，其他的与标准函数一样。</strong></strong><br>**<strong>我们可以将匿名函数赋值给一个变量，这种表达式就成为函数表达式。</strong></p>
+<h3 id="默认参数"><a class="markdownIt-Anchor" href="#默认参数"></a> <strong>默认参数</strong></h3>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function function_name(param1[:type],param2[:type] = default_value) { </span><br><span class="line">}</span><br><span class="line">//示例</span><br><span class="line">function calculate_discount(price, rate) {</span><br><span class="line"> &nbsp; &nbsp;if (rate === void 0) { rate = 0.50; }</span><br><span class="line"> &nbsp; &nbsp;var discount = price * rate;</span><br><span class="line"> &nbsp; &nbsp;console.log(""计算结果: "", discount);</span><br><span class="line">}</span><br><span class="line">calculate_discount(1000);</span><br><span class="line">calculate_discount(1000, 0.30);</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="剩余参数可变长度参数"><a class="markdownIt-Anchor" href="#剩余参数可变长度参数"></a> <strong>剩余参数（可变长度参数)</strong></h3>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">function buildName(firstName: string, ...restOfName: string[]) {</span><br><span class="line"> &nbsp; &nbsp;return firstName + "" "" + restOfName.join("" "");</span><br><span class="line">}</span><br><span class="line"> &nbsp;</span><br><span class="line">let employeeName = buildName(""Joseph"", ""Samuel"", ""Lucas"", ""MacKinzie"");</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="匿名函数"><a class="markdownIt-Anchor" href="#匿名函数"></a> <strong>匿名函数</strong></h3>
+<p><strong>匿名函数是一个没有函数名的函数。</strong>**<br>
+<strong><strong>匿名函数在程序运行时动态声明，除了没有函数名外，其他的与标准函数一样。</strong></strong><br>
+**<strong>我们可以将匿名函数赋值给一个变量，这种表达式就成为函数表达式。</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var res = function([arguments]){...}</span><br><span class="line">//示例 不带参数的匿名函数</span><br><span class="line">var msg = function() { </span><br><span class="line"> &nbsp; &nbsp;return ""hello world""; &nbsp;</span><br><span class="line">} </span><br><span class="line">console.log(msg())</span><br><span class="line"></span><br><span class="line">//带参数的匿名函数</span><br><span class="line">var res = function(a:number,b:number) { </span><br><span class="line"> &nbsp; &nbsp;return a*b; &nbsp;</span><br><span class="line">}; </span><br><span class="line">console.log(res(12,2))</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="匿名函数自调用"><a href="#匿名函数自调用" class="headerlink" title="匿名函数自调用"></a><strong>匿名函数自调用</strong></h3><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function () { </span><br><span class="line"> &nbsp; &nbsp;var x = ""Hello!!""; &nbsp; </span><br><span class="line"> &nbsp; &nbsp;console.log(x) &nbsp; &nbsp; </span><br><span class="line"> })()</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a><strong>构造函数</strong></h3><p>** TypeScript 也支持使用 JavaScript 内置的构造函数 Function() 来定义函数：**</p>
+<h3 id="匿名函数自调用"><a class="markdownIt-Anchor" href="#匿名函数自调用"></a> <strong>匿名函数自调用</strong></h3>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">(function () { </span><br><span class="line"> &nbsp; &nbsp;var x = ""Hello!!""; &nbsp; </span><br><span class="line"> &nbsp; &nbsp;console.log(x) &nbsp; &nbsp; </span><br><span class="line"> })()</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="构造函数"><a class="markdownIt-Anchor" href="#构造函数"></a> <strong>构造函数</strong></h3>
+<p>** TypeScript 也支持使用 JavaScript 内置的构造函数 Function() 来定义函数：**</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> var res = new Function ([arg1[, arg2[, ...argN]],] functionBody)</span><br><span class="line"> //参数说明</span><br><span class="line"> //arg1, arg2, ... argN：参数列表。</span><br><span class="line"> //functionBody：一个含有包括函数定义的 JavaScript 语句的字符串。</span><br><span class="line"> </span><br><span class="line"> //示例</span><br><span class="line">var myFunction = new Function(""a"", ""b"", ""return a * b""); </span><br><span class="line">var x = myFunction(4, 3); </span><br><span class="line">console.log(x);</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="递归函数"><a href="#递归函数" class="headerlink" title="递归函数"></a><strong>递归函数</strong></h3><p><strong>递归函数即在函数内调用函数本身</strong></p>
+<h3 id="递归函数"><a class="markdownIt-Anchor" href="#递归函数"></a> <strong>递归函数</strong></h3>
+<p><strong>递归函数即在函数内调用函数本身</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//示例</span><br><span class="line">function factorial(number) {</span><br><span class="line">    if (number &lt;= 0) {         // 停止执行</span><br><span class="line">        return 1; </span><br><span class="line">    } else {   </span><br><span class="line">        return (number * factorial(number - 1));     // 调用自身</span><br><span class="line">    } </span><br><span class="line">}; </span><br><span class="line">console.log(factorial(6));      // 输出 720</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="Lambada函数"><a href="#Lambada函数" class="headerlink" title="Lambada函数"></a><strong>Lambada函数</strong></h3><p><strong>Lambada函数也称之为箭头函数</strong>**<br>**<strong>箭头函数表达式的语法比函数表达式更短</strong></p>
+<h3 id="lambada函数"><a class="markdownIt-Anchor" href="#lambada函数"></a> <strong>Lambada函数</strong></h3>
+<p><strong>Lambada函数也称之为箭头函数</strong>**<br>
+**<strong>箭头函数表达式的语法比函数表达式更短</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//语法</span><br><span class="line">( [param1, parma2,…param n] )=&gt;statement;</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var foo = (x:number) =&gt;10+x</span><br><span class="line">console.log(foo(100))</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="函数重载"><a href="#函数重载" class="headerlink" title="函数重载"></a><strong>函数重载</strong></h3><p><strong>重载是方法名字相同，而参数不同，返回类型可以相同也可以不同。</strong>**<br>**<strong>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。</strong></p>
+<h3 id="函数重载"><a class="markdownIt-Anchor" href="#函数重载"></a> <strong>函数重载</strong></h3>
+<p><strong>重载是方法名字相同，而参数不同，返回类型可以相同也可以不同。</strong>**<br>
+**<strong>每个重载的方法（或者构造函数）都必须有一个独一无二的参数类型列表。</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">TypeScript</span><br><span class="line">function disp(s1:string):void; </span><br><span class="line">function disp(n1:number,s1:string):void; </span><br><span class="line"> </span><br><span class="line">function disp(x:any,y?:any):void { </span><br><span class="line">    console.log(x); </span><br><span class="line">    console.log(y); </span><br><span class="line">} </span><br><span class="line">disp(""abc"") </span><br><span class="line">disp(1,""xyz"");</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a><strong>元组</strong></h3><p><strong>数组中元素的数据类型都一般是相同的（any[] 类型的数组可以不同），如果存储的元素数据类型不同，则需要使用元组。</strong>**<br>**<strong>元组中允许存储不同类型的元素，元组可以作为参数传递给函数。</strong></p>
+<h3 id="元组"><a class="markdownIt-Anchor" href="#元组"></a> <strong>元组</strong></h3>
+<p><strong>数组中元素的数据类型都一般是相同的（any[] 类型的数组可以不同），如果存储的元素数据类型不同，则需要使用元组。</strong>**<br>
+**<strong>元组中允许存储不同类型的元素，元组可以作为参数传递给函数。</strong></p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//创建元组</span><br><span class="line">var tuple_name = [value1,value2,value3...]</span><br><span class="line"></span><br><span class="line">//示例</span><br><span class="line">var mytuple = [10,""tom""]</span><br></pre></td></tr></tbody></table></figure>
-
-<h4 id="元组运算"><a href="#元组运算" class="headerlink" title="元组运算"></a><strong>元组运算</strong></h4><ul>
+<h4 id="元组运算"><a class="markdownIt-Anchor" href="#元组运算"></a> <strong>元组运算</strong></h4>
+<ul>
 <li><strong>push() 向元组添加元素，添加在最后面</strong></li>
 <li><strong>pop()从元组中移除元素（最后一个),并返回移除的元素</strong></li>
 </ul>
-<h4 id="更新元组"><a href="#更新元组" class="headerlink" title="更新元组"></a><strong>更新元组</strong></h4><p><strong>元组是可变的，所以可对元组进行修改</strong>**<br>**<strong>根据指定的索引更新指定元素</strong></p>
-<h4 id="解构元组"><a href="#解构元组" class="headerlink" title="解构元组"></a><strong>解构元组</strong></h4><p><em><strong><strong>个人理解</strong></strong></em>** 类似于java的顺序取值**</p>
+<h4 id="更新元组"><a class="markdownIt-Anchor" href="#更新元组"></a> <strong>更新元组</strong></h4>
+<p><strong>元组是可变的，所以可对元组进行修改</strong>**<br>
+**<strong>根据指定的索引更新指定元素</strong></p>
+<h4 id="解构元组"><a class="markdownIt-Anchor" href="#解构元组"></a> <strong>解构元组</strong></h4>
+<p><em><strong><strong>个人理解</strong></strong></em>** 类似于java的顺序取值**</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var a =[10,""Runoob""] </span><br><span class="line">var [b,c] = a </span><br><span class="line">console.log( b )  </span><br><span class="line">console.log( c )</span><br></pre></td></tr></tbody></table></figure>
-
 
                 
             </div>

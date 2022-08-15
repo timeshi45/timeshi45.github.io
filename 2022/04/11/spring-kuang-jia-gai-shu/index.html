@@ -5,12 +5,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="spring">
-    <meta name="description" content="Spring框架概述
+    <meta name="description" content=" Spring框架概述
+
 Spring是轻量级的开源的J2EE框架
 Spring可以解决企业开发的复杂性
 Spring有两个核心部分：IOC和AOP
+
 IOC:控制反转，把创建对象过程交给Spring进行管理
-AOP：面向切面，不修改源代码进行功">
+AOP：面向切面，不修改源代码">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -483,15 +485,18 @@ AOP：面向切面，不修改源代码进行功">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Spring框架概述"><a href="#Spring框架概述" class="headerlink" title="Spring框架概述"></a>Spring框架概述</h2><ol>
+                <h2 id="spring框架概述"><a class="markdownIt-Anchor" href="#spring框架概述"></a> Spring框架概述</h2>
+<ol>
 <li>Spring是轻量级的开源的J2EE框架</li>
 <li>Spring可以解决企业开发的复杂性</li>
-<li>Spring有两个核心部分：IOC和AOP<ol>
+<li>Spring有两个核心部分：IOC和AOP
+<ol>
 <li>IOC:控制反转，把创建对象过程交给Spring进行管理</li>
 <li>AOP：面向切面，不修改源代码进行功能增强</li>
 </ol>
 </li>
-<li>Spring特点<ol>
+<li>Spring特点
+<ol>
 <li>方便解耦，简化开发</li>
 <li>AOP编程支持</li>
 <li>方便程序的测试</li>
@@ -502,44 +507,75 @@ AOP：面向切面，不修改源代码进行功">
 </ol>
 </li>
 </ol>
-<h2 id="IOC容器"><a href="#IOC容器" class="headerlink" title="IOC容器"></a>IOC容器</h2><ol>
-<li>IOC概念<ol>
-<li>什么是IOC <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">控制反转，把对象创建和对象之间的调用过程，交给Spring进行管理</span><br></pre></td></tr></tbody></table></figure></li>
-<li>使用IOC的目的<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">降低耦合度</span><br></pre></td></tr></tbody></table></figure></li>
+<h2 id="ioc容器"><a class="markdownIt-Anchor" href="#ioc容器"></a> IOC容器</h2>
+<ol>
+<li>IOC概念
+<ol>
+<li>什么是IOC</li>
 </ol>
-</li>
-<li>IOC底层原理<ol>
-<li>xml解析、工厂模式、反射 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 配置对象的xml文件</span><br><span class="line">2. 创建工厂类</span><br><span class="line">3. 解析xml获取class路径</span><br><span class="line">4. 通过反射创建对象</span><br><span class="line">5. 返回该对象</span><br></pre></td></tr></tbody></table></figure></li>
+ <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">控制反转，把对象创建和对象之间的调用过程，交给Spring进行管理</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>使用IOC的目的</li>
 </ol>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">降低耦合度</span><br></pre></td></tr></tbody></table></figure>
 </li>
-<li>IOC接口(BeanFactory)<ol>
+<li>IOC底层原理
+<ol>
+<li>xml解析、工厂模式、反射</li>
+</ol>
+ <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 配置对象的xml文件</span><br><span class="line">2. 创建工厂类</span><br><span class="line">3. 解析xml获取class路径</span><br><span class="line">4. 通过反射创建对象</span><br><span class="line">5. 返回该对象</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li>IOC接口(BeanFactory)
+<ol>
 <li>IOC思想基于IOC容器完成，IOC容器底层就是对象工厂</li>
-<li>Spring提供IOC容器实现两种方式：(两个接口)<ol>
-<li>BeanFactory<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IOC容器基本实现，是Spring内部的使用接口，不提供开发人员进行使用</span><br><span class="line">*加载配置文件时不会创建对象，在获取(使用)对象时才会创建对象</span><br></pre></td></tr></tbody></table></figure></li>
-<li>ApplicationContext<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BeanFactory接口的子接口，提供更多更强大的功能，一般由开发人员进行使用</span><br><span class="line">*在加载配置文件时就会把配置文件的对象进行创建</span><br></pre></td></tr></tbody></table></figure></li>
+<li>Spring提供IOC容器实现两种方式：(两个接口)
+<ol>
+<li>BeanFactory</li>
+</ol>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IOC容器基本实现，是Spring内部的使用接口，不提供开发人员进行使用</span><br><span class="line">*加载配置文件时不会创建对象，在获取(使用)对象时才会创建对象</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>ApplicationContext</li>
+</ol>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">BeanFactory接口的子接口，提供更多更强大的功能，一般由开发人员进行使用</span><br><span class="line">*在加载配置文件时就会把配置文件的对象进行创建</span><br></pre></td></tr></tbody></table></figure>
+<ol start="3">
 <li>ApplicationContext接口又实现类</li>
 </ol>
 </li>
 </ol>
 </li>
-<li>IOC操作Bean管理<ol>
-<li>什么是Bean管理<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Bean管理指的是两个操作</span><br><span class="line">1.Spring创建对象</span><br><span class="line">2.Spring注入属性</span><br></pre></td></tr></tbody></table></figure></li>
-<li>Bean管理操作有两种方式<ol>
-<li>基于xml配置文件方式实现<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 在Spring配置文件中，使用bean标签，标签里添加对应属性，就可以实现对象创建</span><br><span class="line">2. 在bean标签有很多属性</span><br><span class="line">   1. id：唯一标识</span><br><span class="line">   2. calss：创建对象的全路径</span><br><span class="line">   3. name：与id类似，可以有特殊字符</span><br><span class="line"></span><br><span class="line">3. 创建对象时，默认是执行无参构造方法完成对象创建</span><br></pre></td></tr></tbody></table></figure></li>
-<li>基于xml方式注入属性<ol>
-<li><p>DI：依赖注入，就是注入属性</p>
-<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 使用set方法进行注入</span><br><span class="line">   1. 创建类，定义属性和对应的set方法</span><br><span class="line">   2. 在Spring配置文件中配置对象创建，配置属性注入</span><br><span class="line">2. 使用有参构造注入</span><br><span class="line">   1. 创建类，定义属性，定义有参构造方法</span><br></pre></td></tr></tbody></table></figure></li>
-<li><p>p名称空间注入（了解）</p>
+<li>IOC操作Bean管理
+<ol>
+<li>什么是Bean管理</li>
+</ol>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Bean管理指的是两个操作</span><br><span class="line">1.Spring创建对象</span><br><span class="line">2.Spring注入属性</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>Bean管理操作有两种方式
+<ol>
+<li>基于xml配置文件方式实现</li>
+</ol>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 在Spring配置文件中，使用bean标签，标签里添加对应属性，就可以实现对象创建</span><br><span class="line">2. 在bean标签有很多属性</span><br><span class="line">   1. id：唯一标识</span><br><span class="line">   2. calss：创建对象的全路径</span><br><span class="line">   3. name：与id类似，可以有特殊字符</span><br><span class="line"></span><br><span class="line">3. 创建对象时，默认是执行无参构造方法完成对象创建</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>基于xml方式注入属性
+<ol>
+<li>
+<p>DI：依赖注入，就是注入属性</p>
+<figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 使用set方法进行注入</span><br><span class="line">   1. 创建类，定义属性和对应的set方法</span><br><span class="line">   2. 在Spring配置文件中配置对象创建，配置属性注入</span><br><span class="line">2. 使用有参构造注入</span><br><span class="line">   1. 创建类，定义属性，定义有参构造方法</span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li>
+<p>p名称空间注入（了解）</p>
 <ol>
 <li>添加p名称空间在配置文件中</li>
 <li>进行属性注入，在bean标签里面使用p:属性名进行操作</li>
 </ol>
 </li>
-<li><p>xml注入其他类型属性</p>
+<li>
+<p>xml注入其他类型属性</p>
 <ol>
-<li>字面量<ol>
+<li>字面量
+<ol>
 <li>null值：使用null标签</li>
-<li>属性值包含特殊符号<ol>
+<li>属性值包含特殊符号
+<ol>
 <li>使用转义字符</li>
 <li>把特殊符号内容写到CDATA中</li>
 </ol>
@@ -548,20 +584,23 @@ AOP：面向切面，不修改源代码进行功">
 </li>
 </ol>
 </li>
-<li><p>注入属性-外部bean</p>
+<li>
+<p>注入属性-外部bean</p>
 <ol>
 <li>创建两个类：例如service类和DAO类</li>
 <li>在service中调用dao里面的方法</li>
 <li>在Spring配置文件中进行配置</li>
 </ol>
 </li>
-<li><p>注入属性-内部bean和级联赋值</p>
+<li>
+<p>注入属性-内部bean和级联赋值</p>
 <ol>
 <li>一对多关系</li>
 <li>在实体之间表示一对多关系，员工表示所属部门，使用对象类型属性进行表示</li>
 </ol>
 </li>
-<li><p>注入集合类型属性</p>
+<li>
+<p>注入集合类型属性</p>
 <ol>
 <li>创建类，定义数组、list、map、set类型属性，生成对应set方法</li>
 <li>在spring配置文件中进行配置</li>
