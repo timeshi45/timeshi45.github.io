@@ -5,13 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="mysql">
-    <meta name="description" content=" MySQL安装
- MySQL在线下载安装
+    <meta name="description" content="MySQL安装
+MySQL在线下载安装
 注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M
 
 
 查看CentOS是否自带的MySQL，如果已经安装需要卸载。如果没有找到，则表示没有安装。
-1rpm -qa | grep ">
+1rpm -qa | grep my">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -492,8 +492,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="mysql安装"><a class="markdownIt-Anchor" href="#mysql安装"></a> MySQL安装</h1>
-<h2 id="mysql在线下载安装"><a class="markdownIt-Anchor" href="#mysql在线下载安装"></a> MySQL在线下载安装</h2>
+                <h1>MySQL安装</h1>
+<h2 id="MySQL在线下载安装">MySQL在线下载安装</h2>
 <p>注：需要连接互联网，在线mysql的安装包，5.6的版本大约86M</p>
 <ol>
 <li>
@@ -537,10 +537,10 @@
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep mysql</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
-<h2 id="修改mysql底层码表"><a class="markdownIt-Anchor" href="#修改mysql底层码表"></a> 修改mysql底层码表</h2>
-<h3 id="问题"><a class="markdownIt-Anchor" href="#问题"></a> 问题</h3>
+<h2 id="修改mysql底层码表">修改mysql底层码表</h2>
+<h3 id="问题">问题</h3>
 <p>由于mysql软件底层码表使用的不是utf-8，导致执行sql语句中文乱码。需要设置客户端和服务器端的编码为utf-8</p>
-<h3 id="解决方案"><a class="markdownIt-Anchor" href="#解决方案"></a> 解决方案</h3>
+<h3 id="解决方案">解决方案</h3>
 <ol>
 <li>
 <p>修改mysql的配置文件</p>
@@ -559,7 +559,7 @@
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart mysqld</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
-<h2 id="启动mysql服务并登录"><a class="markdownIt-Anchor" href="#启动mysql服务并登录"></a> 启动MySQL服务并登录</h2>
+<h2 id="启动MySQL服务并登录">启动MySQL服务并登录</h2>
 <ol>
 <li>
 <p>启动mysql的服务</p>
@@ -578,7 +578,7 @@
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span> MySQL命令</span><br><span class="line">set password = password('密码'); </span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
-<h2 id="设置远程访问权限"><a class="markdownIt-Anchor" href="#设置远程访问权限"></a> 设置远程访问权限</h2>
+<h2 id="设置远程访问权限">设置远程访问权限</h2>
 <blockquote>
 <p>开启mysql的远程登录权限，默认情况下mysql为安全起见，不支持远程登录mysql，所以需要设置开启，并且刷新权限缓存。</p>
 </blockquote>
@@ -592,7 +592,7 @@
 <figure class="highlight tex"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="params">#</span> Linux命令</span><br><span class="line"><span class="params">#</span>开放3306端口</span><br><span class="line">/sbin/iptables -I INPUT -p tcp --dport 3306 -j ACCEPT</span><br><span class="line"></span><br><span class="line"><span class="params">#</span>开放的端口永久保存到防火墙</span><br><span class="line">firewall-cmd --zone=public --add-port=3306/tcp --permanent</span><br><span class="line"></span><br><span class="line"><span class="params">#</span>重启防火墙</span><br><span class="line">systemctl restart firewalld</span><br></pre></td></tr></tbody></table></figure>
 </li>
 </ol>
-<h2 id="客户端windows连接mysql"><a class="markdownIt-Anchor" href="#客户端windows连接mysql"></a> 客户端Windows连接MySQL</h2>
+<h2 id="客户端Windows连接MySQL">客户端Windows连接MySQL</h2>
 <p>在本地Windows系统使用Navicat Premium软件连接虚拟机中的Linux系统安装的MySQL</p>
 
                 

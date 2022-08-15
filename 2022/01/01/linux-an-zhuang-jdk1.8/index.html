@@ -5,15 +5,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="jdk">
-    <meta name="description" content=" Linux安装JDK1.8
- 1、检查系统中的jdk版本
+    <meta name="description" content="Linux安装JDK1.8
+1、检查系统中的jdk版本
 1java -version
- 2、检测jdk安装包
+2、检测jdk安装包
 1rpm -qa | grep java
- 3、卸载openjdk
+3、卸载openjdk
 1rpm -e --nodeps xxxxxxx
 或者
-1">
+1yum ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -494,16 +494,16 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="linux安装jdk18"><a class="markdownIt-Anchor" href="#linux安装jdk18"></a> Linux安装JDK1.8</h1>
-<h2 id="1-检查系统中的jdk版本"><a class="markdownIt-Anchor" href="#1-检查系统中的jdk版本"></a> 1、检查系统中的jdk版本</h2>
+                <h1>Linux安装JDK1.8</h1>
+<h2 id="1、检查系统中的jdk版本">1、检查系统中的jdk版本</h2>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="2-检测jdk安装包"><a class="markdownIt-Anchor" href="#2-检测jdk安装包"></a> 2、检测jdk安装包</h2>
+<h2 id="2、检测jdk安装包">2、检测jdk安装包</h2>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa | grep java</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="3-卸载openjdk"><a class="markdownIt-Anchor" href="#3-卸载openjdk"></a> 3、卸载openjdk</h2>
+<h2 id="3、卸载openjdk">3、卸载openjdk</h2>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -e --nodeps xxxxxxx</span><br></pre></td></tr></tbody></table></figure>
 <p>或者</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum remove *openjdk*</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="4-安装新的jdk"><a class="markdownIt-Anchor" href="#4-安装新的jdk"></a> 4、安装新的jdk</h2>
+<h2 id="4、安装新的jdk">4、安装新的jdk</h2>
 <p>首先到jdk官网上下载你想要的jdk版本。官网由于证书问题wget 不能直接下载，需要加忽略证书和请求头。</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget --no-check-certificate --no-cookies --header ""Cookie: oraclelicense=accept-securebackup-cookie"" http://download.oracle.com/otn-pub/java/jdk/8u131-b11/d54c1d3a095b4ff2b6607d096fa80163/jdk-8u131-linux-x64.rpm</span><br></pre></td></tr></tbody></table></figure>
 <p>添加执行权限：</p>

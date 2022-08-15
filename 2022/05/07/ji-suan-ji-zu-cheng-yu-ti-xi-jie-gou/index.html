@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="软考">
-    <meta name="description" content=" 一、Flynn分类法
+    <meta name="description" content="一、Flynn分类法
 123一种常见的计算机体系结构分类方法，主要有两个分类指标1. 指令流2. 数据流
 
 
@@ -22,6 +22,7 @@
 控制器：一个处理器：一个主存模块：一个
 
 单处理器系统
+
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -503,7 +504,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一-flynn分类法"><a class="markdownIt-Anchor" href="#一-flynn分类法"></a> 一、Flynn分类法</h1>
+                <h1>一、Flynn分类法</h1>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一种常见的计算机体系结构分类方法，主要有两个分类指标</span><br><span class="line">1. 指令流</span><br><span class="line">2. 数据流</span><br></pre></td></tr></tbody></table></figure>
 <table>
 <thead>
@@ -541,7 +542,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="二-cisc与risc"><a class="markdownIt-Anchor" href="#二-cisc与risc"></a> 二、CISC与RISC</h1>
+<h1>二、CISC与RISC</h1>
 <table>
 <thead>
 <tr>
@@ -569,27 +570,27 @@
 </tr>
 </tbody>
 </table>
-<h1 id="三-层次化存储结构"><a class="markdownIt-Anchor" href="#三-层次化存储结构"></a> 三、层次化存储结构</h1>
-<p>CPU   <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 寄存器<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇕</mo></mrow><annotation encoding="application/x-tex">\Updownarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mrel">⇕</span></span></span></span><br>
-Cache  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 按内容存取<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇕</mo></mrow><annotation encoding="application/x-tex">\Updownarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mrel">⇕</span></span></span></span><br>
+<h1>三、层次化存储结构</h1>
+<p>CPU   $\rightarrow$ 寄存器<br>
+$\Updownarrow$<br>
+Cache  $\rightarrow$ 按内容存取<br>
+$\Updownarrow$<br>
 内存（主存）<br>
-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⇕</mo></mrow><annotation encoding="application/x-tex">\Updownarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mrel">⇕</span></span></span></span><br>
-外存（辅存）   <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>→</mo></mrow><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mrel">→</span></span></span></span> 硬盘、光盘、u盘等</p>
+$\Updownarrow$<br>
+外存（辅存）   $\rightarrow$ 硬盘、光盘、u盘等</p>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">从上到下，容量逐渐增大</span><br><span class="line">速度逐渐变慢</span><br><span class="line">单位价格逐渐降低</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="四-cache"><a class="markdownIt-Anchor" href="#四-cache"></a> 四、Cache</h1>
+<h1>四、Cache</h1>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. Cache的功能：提高CPU数据输入输出的速率，突破冯·诺伊曼瓶颈，即CPU与存储系统间数据传送带宽限制</span><br><span class="line">2. 在计算机的存储系统种，Cache是访问速度最快的层次</span><br><span class="line">3. 使用Cache改善系统性能的依据是程序的局部性原理</span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">如果以h代表Cache的访问命中率，t1表示Cache的周期时间，t2表示主存储器周期时间，以读操作为例，使用“Cache+主存储器”的系统的平均周期为t3，则</span><br><span class="line">                t3 = h * t1 + ( 1 - h ) * t2</span><br><span class="line">其中，( 1 - h )又称为失效率（未命中率）</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="五-局部性原理"><a class="markdownIt-Anchor" href="#五-局部性原理"></a> 五、局部性原理</h1>
-<h2 id="1-时间局部性"><a class="markdownIt-Anchor" href="#1-时间局部性"></a> 1. 时间局部性</h2>
+<h1>五、局部性原理</h1>
+<h2 id="1-时间局部性">1. 时间局部性</h2>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果程序中的某条指令一旦执行，不久以后该指令可能再次执行;如果某数据被访问过，不久以后该数据可能再次被访问。产生时间局部性的典型原因，是由于在程序中存在着大量的循环操作。</span><br><span class="line">----被引用过一次的存储器位置在未来会被多次引用（通常在循环中）</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="2-空间局部性"><a class="markdownIt-Anchor" href="#2-空间局部性"></a> 2. 空间局部性</h2>
+<h2 id="2-空间局部性">2. 空间局部性</h2>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一旦程序访问了某个存储单元，在不久之后，其附近的存储单元也将被访问，即程序在一段时间内所访问的地址，可能集中在一定的范围之内，这是因为指令通常是顺序存放、顺序执行的，数据也一般是以向量、数组、表等形式簇聚存储的。</span><br><span class="line">----如果一个存储器的位置被引用，那么将来他附近的位置也会被引用。</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="3-工作集理论"><a class="markdownIt-Anchor" href="#3-工作集理论"></a> 3. 工作集理论</h2>
+<h2 id="3-工作集理论">3. 工作集理论</h2>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">把要被频繁访问的页面集合打包起来，并放到Cache使之短时间不被替换，达到高效的目的。</span><br></pre></td></tr></tbody></table></figure>
-<h1 id="六-主存"><a class="markdownIt-Anchor" href="#六-主存"></a> 六、主存</h1>
-<h2 id="1分类"><a class="markdownIt-Anchor" href="#1分类"></a> 1.分类</h2>
+<h1>六、主存</h1>
+<h2 id="1-分类">1.分类</h2>
 <ol>
 <li>随机存取存储器
 <ul>
@@ -610,7 +611,7 @@ Cache  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo
 </li>
 </ol>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">特点:断电后仍能存储相应的信息</span><br></pre></td></tr></tbody></table></figure>
-<h2 id="2编址"><a class="markdownIt-Anchor" href="#2编址"></a> 2.编址</h2>
+<h2 id="2-编址">2.编址</h2>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">所谓主存的编址就是把芯片组成相应的存储器，在组成时往往需要分析什么样规格的芯片、多少块芯片能够组成按什么方式编址的存储空间。</span><br><span class="line"></span><br><span class="line">  比如 8*4位的存储器，8代表它有8个地址空间，4代表每个地址空间存储有4个比特位的信息。</span><br></pre></td></tr></tbody></table></figure>
 <figure class="highlight txt"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">软考题型：</span><br><span class="line"></span><br><span class="line">     内存地址从AC000H到C7FFH,共有_ (1)_ K个地址单元， 如果该内存地址按字(16bit)</span><br><span class="line">编址，由28片存储器芯片构成。已知构成此内存的芯片每片有16K个存储单元，则该芯片每</span><br><span class="line">个存储单元存储_ _(2)_ 位。</span><br><span class="line"></span><br><span class="line">    （1）A. 96     B. 112      C. 132     D. 156</span><br><span class="line"></span><br><span class="line">    （2）A. 4       B. 8          C.16        D. 24</span><br><span class="line"></span><br><span class="line">解答：多少个地址单元：C7FFFH - AC000H + 1  ，C7FFFH + 1 = C8000H , C8000H -  AC000H = 1C000H  , 然后转化单位，（1H = 1024 K = 2^10 K）1C000 ÷ 2^10 = 112 ,故（1）选B。总容量为112K*16bit，设该芯片每个存储单元存储x 位,（112 * 16）/ （28 * 16 * x）= 1 , x = 4 ,故（2）选A</span><br></pre></td></tr></tbody></table></figure>
                 

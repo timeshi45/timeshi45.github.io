@@ -5,8 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="shell">
-    <meta name="description" content=" 1. Shell编程概述
- 1.1 Shell名词解释
+    <meta name="description" content="1. Shell编程概述
+1.1 Shell名词解释
 
 
 Kernel
@@ -18,7 +18,7 @@ Linux内核主要是为了和硬件打交道
 Shell
 
 命令解释器（command interpreter）
-Shell 是一个用C语言编写的程序，它时用户使用">
+Shell 是一个用C语言编写的程序，它时用户使用Li">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -495,8 +495,8 @@ Shell 是一个用C语言编写的程序，它时用户使用">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="1-shell编程概述"><a class="markdownIt-Anchor" href="#1-shell编程概述"></a> 1. Shell编程概述</h1>
-<h2 id="11-shell名词解释"><a class="markdownIt-Anchor" href="#11-shell名词解释"></a> 1.1 Shell名词解释</h2>
+                <h1>1. Shell编程概述</h1>
+<h2 id="1-1-Shell名词解释">1.1 Shell名词解释</h2>
 <ul>
 <li>
 <p>Kernel</p>
@@ -534,8 +534,8 @@ Shell 是一个用C语言编写的程序，它时用户使用">
 <ul>
 <li>告诉系统其后路径所指定的程序即是解释此脚本文件的Shell程序</li>
 <li>
-<pre class="highlight"><code class="sh">  <span class="hljs-comment">#!/bin/bash</span>
-  <span class="hljs-built_in">echo</span> <span class="hljs-string">"Hello World !"</span>
+<pre><code class="language-sh">  #!/bin/bash
+  echo "Hello World !"
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">    </span><br><span class="line">##  1.2 Shell脚本的执行</span><br><span class="line">- 输入脚本的绝对路径或相对路径</span><br><span class="line">    - /root/helloworld.sh</span><br><span class="line">    - ./helloworld.sh</span><br><span class="line">    - 执行的必须是一个可执行文件</span><br><span class="line">- bash或sh+脚本</span><br><span class="line">	- sh hellowrld.sh</span><br><span class="line">	- 当脚本没有x权限时，root和文件所有者通过该方式可以正常执行</span><br><span class="line">- 在脚本的路径前再加"."或source</span><br><span class="line">    - source helloworld.sh</span><br><span class="line">- 区别</span><br><span class="line">    - 绝对路径、相对路径或者bash、sh会新开一个bash，不同bash中的变量无法共享</span><br><span class="line">    - 第三种是在同一个shell里执行的</span><br><span class="line">- export：可以将当前进程的变量传递给子进程去使用</span><br><span class="line">    - 将来配置profile的时候，所有的变量前必须加export</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#  Shell 基础入门</span><br><span class="line">##  2.1 Shell 变量</span><br><span class="line">- 定义变量时，变量名不加美元符号</span><br><span class="line">    - 命名只能使用英文字母，数字和下划线，首个字母不能以数字开头。</span><br><span class="line">    - 中间不能有空格，可以使用下划线</span><br><span class="line">    - 不能使用标点符号。</span><br><span class="line">    - 不能使用bash里的关键字(可用help命令查看保留关键字)</span><br><span class="line">- 变量的类型</span><br><span class="line">    - 局部变量</span><br><span class="line">        - 局部变量在脚本或命令中定义，仅在当前shell实例中有效，其他shell启动的程序不能访问局部变量</span><br><span class="line">    - 环境变量</span><br><span class="line">        - 所有的程序，包括shell启动的程序，都能访问环境变量，有些程序需要环境变量来保证其正常运行</span><br><span class="line">    - Shell变量</span><br><span class="line">        - shell变量是由shell程序设置的特殊变量。shell变量中有一部分是环境变量，有一部分时局部变量</span><br><span class="line">-</span><br><span class="line">```sh</span><br><span class="line"># 变量的声明</span><br><span class="line">name="zhangsan"</span><br><span class="line">for file in `ls /etc`</span><br><span class="line">或</span><br><span class="line">for file in $(ls /etc)</span><br><span class="line"></span><br><span class="line"># 变量的调用</span><br><span class="line">echo $name</span><br><span class="line">echo ${name}</span><br><span class="line"></span><br><span class="line">for skill in Ada Coffe Action Java; do</span><br><span class="line">    echo "I am good at ${skill}Script"</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line"># 只读变量 /bin/sh: NAME: This variable is read only</span><br><span class="line">url="https://www.google.com"</span><br><span class="line">readonly url</span><br><span class="line">url="https://www.runoob.com"</span><br><span class="line"></span><br><span class="line"># 删除变量</span><br><span class="line">unset name</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 </code></pre>
 </li>

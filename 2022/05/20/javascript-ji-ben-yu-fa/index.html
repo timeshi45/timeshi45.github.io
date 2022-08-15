@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="JavaScript">
-    <meta name="description" content=" JavaScript 的基本语法
- 语句
+    <meta name="description" content="JavaScript 的基本语法
+语句
 JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。
 语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
-">
+1v">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -490,8 +490,8 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="javascript-的基本语法"><a class="markdownIt-Anchor" href="#javascript-的基本语法"></a> JavaScript 的基本语法</h1>
-<h2 id="语句"><a class="markdownIt-Anchor" href="#语句"></a> 语句</h2>
+                <h1>JavaScript 的基本语法</h1>
+<h2 id="语句">语句</h2>
 <p>JavaScript 程序的执行单位为行（line），也就是一行一行地执行。一般情况下，每一行就是一个语句。</p>
 <p>语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span> + <span class="number">3</span>;</span><br></pre></td></tr></tbody></table></figure>
@@ -505,8 +505,8 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span> + <span class="number">3</span>;</span><br><span class="line"><span class="string">'abc'</span>;</span><br></pre></td></tr></tbody></table></figure>
 <p>上面两行语句只是单纯地产生一个值，并没有任何实际的意义。</p>
-<h2 id="变量"><a class="markdownIt-Anchor" href="#变量"></a> 变量</h2>
-<h3 id="概念"><a class="markdownIt-Anchor" href="#概念"></a> 概念</h3>
+<h2 id="变量">变量</h2>
+<h3 id="概念">概念</h3>
 <p>变量是对“值”的具名引用。变量就是为“值”起名，然后引用这个名字，就等同于引用这个值。变量的名字就是变量名。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></tbody></table></figure>
 <p>上面的代码先声明变量<code>a</code>，然后在变量<code>a</code>与数值1之间建立引用关系，称为将数值1“赋值”给变量<code>a</code>。以后，引用变量名<code>a</code>就会得到数值1。最前面的<code>var</code>，是变量声明命令。它表示通知解释引擎，要创建一个变量<code>a</code>。</p>
@@ -531,13 +531,13 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>上面代码中，变量<code>x</code>声明了两次，第二次声明是无效的。</p>
 <p>但是，如果第二次声明的时候还进行了赋值，则会覆盖掉前面的值。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> x = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> x;</span><br><span class="line">x = <span class="number">2</span>;</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="变量提升"><a class="markdownIt-Anchor" href="#变量提升"></a> 变量提升</h3>
+<h3 id="变量提升">变量提升</h3>
 <p>JavaScript 引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。这造成的结果，就是所有的变量的声明语句，都会被提升到代码的头部，这就叫做变量提升（hoisting）。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码首先使用<code>console.log</code>方法，在控制台（console）显示变量<code>a</code>的值。这时变量<code>a</code>还没有声明和赋值，所以这是一种错误的做法，但是实际上不会报错。因为存在变量提升，真正运行的是下面的代码。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line">a = <span class="number">1</span>;</span><br></pre></td></tr></tbody></table></figure>
 <p>最后的结果是显示<code>undefined</code>，表示变量<code>a</code>已声明，但还未赋值。</p>
-<h2 id="标识符"><a class="markdownIt-Anchor" href="#标识符"></a> 标识符</h2>
+<h2 id="标识符">标识符</h2>
 <p>标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以<code>a</code>和<code>A</code>是两个不同的标识符。</p>
 <p>标识符有一套命名规则，不符合规则的就是非法标识符。JavaScript 引擎遇到非法标识符，就会报错。</p>
 <p>简单说，标识符命名规则如下。</p>
@@ -554,7 +554,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <blockquote>
 <p>JavaScript 有一些保留字，不能用作标识符：arguments、break、case、catch、class、const、continue、debugger、default、delete、do、else、enum、eval、export、extends、false、finally、for、function、if、implements、import、in、instanceof、interface、let、new、null、package、private、protected、public、return、static、super、switch、this、throw、true、try、typeof、var、void、while、with、yield。</p>
 </blockquote>
-<h2 id="注释"><a class="markdownIt-Anchor" href="#注释"></a> 注释</h2>
+<h2 id="注释">注释</h2>
 <p>源码中被 JavaScript 引擎忽略的部分就叫做注释，它的作用是对代码进行解释。JavaScript 提供两种注释的写法：一种是单行注释，用<code>//</code>起头；另一种是多行注释，放在<code>/*</code>和<code>*/</code>之间。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这是单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> 这是</span></span><br><span class="line"><span class="comment"> 多行</span></span><br><span class="line"><span class="comment"> 注释</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></tbody></table></figure>
 <p>此外，由于历史上 JavaScript 可以兼容 HTML 代码的注释，所以<code>&lt;!--</code>和<code>--&gt;</code>也被视为合法的单行注释。</p>
@@ -563,14 +563,14 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>需要注意的是，<code>--&gt;</code>只有在行首，才会被当成单行注释，否则会当作正常的运算。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">countdown</span>(<span class="params">n</span>) {</span><br><span class="line">  <span class="keyword">while</span> (n --&gt; <span class="number">0</span>) <span class="variable language_">console</span>.<span class="title function_">log</span>(n);</span><br><span class="line">}</span><br><span class="line"><span class="title function_">countdown</span>(<span class="number">3</span>)</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="comment">// 0</span></span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码中，<code>n --&gt; 0</code>实际上会当作<code>n-- &gt; 0</code>，因此输出2、1、0。</p>
-<h2 id="区块"><a class="markdownIt-Anchor" href="#区块"></a> 区块</h2>
+<h2 id="区块">区块</h2>
 <p>JavaScript 使用大括号，将多个相关的语句组合在一起，称为“区块”（block）。</p>
 <p>对于<code>var</code>命令来说，JavaScript 的区块不构成单独的作用域（scope）。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">a <span class="comment">// 1</span></span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码在区块内部，使用<code>var</code>命令声明并赋值了变量<code>a</code>，然后在区块外部，变量<code>a</code>依然有效，区块对于<code>var</code>命令不构成单独的作用域，与不使用区块的情况没有任何区别。在 JavaScript 语言中，单独使用区块并不常见，区块往往用来构成其他更复杂的语法结构，比如<code>for</code>、<code>if</code>、<code>while</code>、<code>function</code>等。</p>
-<h2 id="条件语句"><a class="markdownIt-Anchor" href="#条件语句"></a> 条件语句</h2>
+<h2 id="条件语句">条件语句</h2>
 <p>JavaScript 提供<code>if</code>结构和<code>switch</code>结构，完成条件判断，即只有满足预设的条件，才会执行相应的语句。</p>
-<h3 id="if-结构"><a class="markdownIt-Anchor" href="#if-结构"></a> if 结构</h3>
+<h3 id="if-结构">if 结构</h3>
 <p><code>if</code>结构先判断一个表达式的布尔值，然后根据布尔值的真伪，执行不同的语句。所谓布尔值，指的是 JavaScript 的两个特殊值，<code>true</code>表示“真”，<code>false</code>表示“伪”。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (布尔值)</span><br><span class="line">  语句;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="keyword">if</span> (布尔值) 语句;</span><br></pre></td></tr></tbody></table></figure>
 <p>上面是<code>if</code>结构的基本形式。需要注意的是，“布尔值”往往由一个条件表达式产生的，必须放在圆括号中，表示对表达式求值。如果表达式的求值结果为<code>true</code>，就执行紧跟在后面的语句；如果结果为<code>false</code>，则跳过紧跟在后面的语句。</p>
@@ -585,7 +585,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>这种错误可以正常生成一个布尔值，因而不会报错。为了避免这种情况，有些开发者习惯将常量写在运算符的左边，这样的话，一旦不小心将相等运算符写成赋值运算符，就会报错，因为常量不能被赋值。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (x = <span class="number">2</span>) { <span class="comment">// 不报错</span></span><br><span class="line"><span class="keyword">if</span> (<span class="number">2</span> = x) { <span class="comment">// 报错</span></span><br></pre></td></tr></tbody></table></figure>
 <p>至于为什么优先采用“严格相等运算符”（<code>===</code>），而不是“相等运算符”（<code>==</code>），请参考《运算符》章节。</p>
-<h3 id="ifelse-结构"><a class="markdownIt-Anchor" href="#ifelse-结构"></a> if…else 结构</h3>
+<h3 id="if…else-结构">if…else 结构</h3>
 <p><code>if</code>代码块后面，还可以跟一个<code>else</code>代码块，表示不满足条件时，所要执行的代码。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (m === <span class="number">3</span>) {</span><br><span class="line">  <span class="comment">// 满足条件时，执行的语句</span></span><br><span class="line">} <span class="keyword">else</span> {</span><br><span class="line">  <span class="comment">// 不满足条件时，执行的语句</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码判断变量<code>m</code>是否等于3，如果等于就执行<code>if</code>代码块，否则执行<code>else</code>代码块。</p>
@@ -597,7 +597,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (m !== <span class="number">1</span>) {</span><br><span class="line">  <span class="keyword">if</span> (n === <span class="number">2</span>) {</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'hello'</span>);</span><br><span class="line">  } <span class="keyword">else</span> {</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'world'</span>);</span><br><span class="line">  }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>如果想让<code>else</code>代码块跟随最上面的那个<code>if</code>语句，就要改变大括号的位置。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (m !== <span class="number">1</span>) {</span><br><span class="line">  <span class="keyword">if</span> (n === <span class="number">2</span>) {</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'hello'</span>);</span><br><span class="line">  }</span><br><span class="line">} <span class="keyword">else</span> {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'world'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="comment">// world</span></span><br></pre></td></tr></tbody></table></figure>
-<h3 id="switch-结构"><a class="markdownIt-Anchor" href="#switch-结构"></a> switch 结构</h3>
+<h3 id="switch-结构">switch 结构</h3>
 <p>多个<code>if...else</code>连在一起使用的时候，可以转为使用更方便的<code>switch</code>结构。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> (fruit) {</span><br><span class="line">  <span class="keyword">case</span> <span class="string">"banana"</span>:</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="keyword">case</span> <span class="string">"apple"</span>:</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="attr">default</span>:</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码根据变量<code>fruit</code>的值，选择执行相应的<code>case</code>。如果所有<code>case</code>都不符合，则执行最后的<code>default</code>部分。需要注意的是，每个<code>case</code>代码块内部的<code>break</code>语句不能少，否则会接下去执行下一个<code>case</code>代码块，而不是跳出<code>switch</code>结构。</p>
@@ -610,7 +610,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>需要注意的是，<code>switch</code>语句后面的表达式，与<code>case</code>语句后面的表示式比较运行结果时，采用的是严格相等运算符（<code>===</code>），而不是相等运算符（<code>==</code>），这意味着比较时不会发生类型转换。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">switch</span> (x) {</span><br><span class="line">  <span class="keyword">case</span> <span class="attr">true</span>:</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'x 发生类型转换'</span>);</span><br><span class="line">    <span class="keyword">break</span>;</span><br><span class="line">  <span class="attr">default</span>:</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'x 没有发生类型转换'</span>);</span><br><span class="line">}</span><br><span class="line"><span class="comment">// x 没有发生类型转换</span></span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码中，由于变量<code>x</code>没有发生类型转换，所以不会执行<code>case true</code>的情况。这表明，<code>switch</code>语句内部采用的是“严格相等运算符”，详细解释请参考《运算符》一节。</p>
-<h3 id="三元运算符"><a class="markdownIt-Anchor" href="#三元运算符"></a> 三元运算符 ?:</h3>
+<h3 id="三元运算符">三元运算符 ?:</h3>
 <p>JavaScript 还有一个三元运算符（即该运算符需要三个运算子）<code>?:</code>，也可以用于逻辑判断。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(条件) ? 表达式<span class="number">1</span> : 表达式<span class="number">2</span></span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码中，如果“条件”为<code>true</code>，则返回“表达式1”的值，否则返回“表达式2”的值。</p>
@@ -622,9 +622,9 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>上面代码利用三元运算符，输出相应的提示。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> msg = <span class="string">'数字'</span> + n + <span class="string">'是'</span> + (n % <span class="number">2</span> === <span class="number">0</span> ? <span class="string">'偶数'</span> : <span class="string">'奇数'</span>);</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码利用三元运算符，在字符串之中插入不同的值。</p>
-<h2 id="循环语句"><a class="markdownIt-Anchor" href="#循环语句"></a> 循环语句</h2>
+<h2 id="循环语句">循环语句</h2>
 <p>循环语句用于重复执行某个操作，它有多种形式。</p>
-<h3 id="while-循环"><a class="markdownIt-Anchor" href="#while-循环"></a> while 循环</h3>
+<h3 id="while-循环">while 循环</h3>
 <p><code>While</code>语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (条件)</span><br><span class="line">  语句;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="keyword">while</span> (条件) 语句;</span><br></pre></td></tr></tbody></table></figure>
 <p><code>while</code>语句的循环条件是一个表达式，必须放在圆括号中。代码块部分，如果只有一条语句，可以省略大括号，否则就必须加上大括号。</p>
@@ -634,7 +634,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p>上面的代码将循环100次，直到<code>i</code>等于100为止。</p>
 <p>下面的例子是一个无限循环，因为循环条件总是为真。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (<span class="literal">true</span>) {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'Hello, world'</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="for-循环"><a class="markdownIt-Anchor" href="#for-循环"></a> for 循环</h3>
+<h3 id="for-循环">for 循环</h3>
 <p><code>for</code>语句是循环命令的另一种形式，可以指定循环的起点、终点和终止条件。它的格式如下。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (初始化表达式; 条件; 递增表达式)</span><br><span class="line">  语句</span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (初始化表达式; 条件; 递增表达式) {</span><br><span class="line">  语句</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p><code>for</code>语句后面的括号里面，有三个表达式。</p>
@@ -651,13 +651,13 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <p><code>for</code>语句的三个部分（initialize、test、increment），可以省略任何一个，也可以全部省略。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> ( ; ; ){</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'Hello World'</span>);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码省略了<code>for</code>语句表达式的三个部分，结果就导致了一个无限循环。</p>
-<h3 id="dowhile-循环"><a class="markdownIt-Anchor" href="#dowhile-循环"></a> do…while 循环</h3>
+<h3 id="do…while-循环">do…while 循环</h3>
 <p><code>do...while</code>循环与<code>while</code>循环类似，唯一的区别就是先运行一次循环体，然后判断循环条件。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">do</span></span><br><span class="line">  语句</span><br><span class="line"><span class="keyword">while</span> (条件);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="keyword">do</span> {</span><br><span class="line">  语句</span><br><span class="line">} <span class="keyword">while</span> (条件);</span><br></pre></td></tr></tbody></table></figure>
 <p>不管条件是否为真，<code>do...while</code>循环至少运行一次，这是这种结构最大的特点。另外，<code>while</code>语句后面的分号注意不要省略。</p>
 <p>下面是一个例子。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> x = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">do</span> {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(i);</span><br><span class="line">  i++;</span><br><span class="line">} <span class="keyword">while</span>(i &lt; x);</span><br></pre></td></tr></tbody></table></figure>
-<h3 id="break-语句和-continue-语句"><a class="markdownIt-Anchor" href="#break-语句和-continue-语句"></a> break 语句和 continue 语句</h3>
+<h3 id="break-语句和-continue-语句">break 语句和 continue 语句</h3>
 <p><code>break</code>语句和<code>continue</code>语句都具有跳转作用，可以让代码不按既有的顺序执行。</p>
 <p><code>break</code>语句用于跳出代码块或循环。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(i &lt; <span class="number">100</span>) {</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'i 当前为：'</span> + i);</span><br><span class="line">  i++;</span><br><span class="line">  <span class="keyword">if</span> (i === <span class="number">10</span>) <span class="keyword">break</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
@@ -669,7 +669,7 @@ JavaScript 程序的执行单位为行（line），也就是一行一行地执�
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (i &lt; <span class="number">100</span>){</span><br><span class="line">  i++;</span><br><span class="line">  <span class="keyword">if</span> (i % <span class="number">2</span> === <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">'i 当前为：'</span> + i);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 <p>上面代码只有在<code>i</code>为奇数时，才会输出<code>i</code>的值。如果<code>i</code>为偶数，则直接进入下一轮循环。</p>
 <p>如果存在多重循环，不带参数的<code>break</code>语句和<code>continue</code>语句都只针对最内层循环。</p>
-<h3 id="标签label"><a class="markdownIt-Anchor" href="#标签label"></a> 标签（label）</h3>
+<h3 id="标签（label）">标签（label）</h3>
 <p>JavaScript 语言允许，语句的前面有标签（label），相当于定位符，用于跳转到程序的任意位置，标签的格式如下。</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">label</span>:</span><br><span class="line">  语句</span><br></pre></td></tr></tbody></table></figure>
 <p>标签可以是任意的标识符，但不能是保留字，语句部分可以是任意语句。</p>
